@@ -1,4 +1,4 @@
-package com.example.sakiladata;
+package se.yalar.grupp5.sakiladata;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

@@ -1,4 +1,4 @@
-package com.example.sakiladata;
+package se.yalar.grupp5.sakiladata;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
