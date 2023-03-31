@@ -2,7 +2,6 @@ package se.yalar.grupp5.sakiladata.entities;
 
 
 import jakarta.persistence.*;
-import org.example.Rating;
 import org.hibernate.mapping.Set;
 
 @Entity
