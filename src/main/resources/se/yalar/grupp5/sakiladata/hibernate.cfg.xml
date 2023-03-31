@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!-- Version 8 MySQL hiberante-cfg.xml example for Hibernate 5 -->
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- Dessa properties innehåller konfigurationen mot vår databas -->
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost/sakila?serverTimezone=UTC</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">Fejans123</property>
+        <property name="connection.pool_size">3</property>
+        <property name="current_session_context_class">thread</property>
+        <property name="show_sql">true</property>
+        <property name="format_sql">false</property>
+        <property name="hbm2ddl.auto">update</property>
+
+        <mapping class="se.yalar.grupp5.sakiladata.entities.Actor"/>
+        <mapping class="se.yalar.grupp5.sakiladata.entities.Address"/>
+        <mapping class="se.yalar.grupp5.sakiladata.entities.Category"/>
+        <mapping class="se.yalar.grupp5.sakiladata.entities.City"/>
+        <mapping class="se.yalar.grupp5.sakiladata.entities.Country"/>
+        <mapping class="se.yalar.grupp5.sakiladata.entities.Customer"/>
+        <mapping class="se.yalar.grupp5.sakiladata.entities.Film"/>
+        <mapping class="se.yalar.grupp5.sakiladata.entities.FilmActor"/>
+        <mapping class="se.yalar.grupp5.sakiladata.entities.FilmCategory"/>
+        <mapping class="se.yalar.grupp5.sakiladata.entities.FilmText"/>
+        <mapping class="se.yalar.grupp5.sakiladata.entities.Inventory"/>
+        <mapping class="se.yalar.grupp5.sakiladata.entities.Language"/>
+        <mapping class="se.yalar.grupp5.sakiladata.entities.Payment"/>
+        <mapping class="se.yalar.grupp5.sakiladata.entities.Rental"/>
+        <mapping class="se.yalar.grupp5.sakiladata.entities.Staff"/>
+        <mapping class="se.yalar.grupp5.sakiladata.entities.Store"/>
+
+    </session-factory>
+</hibernate-configuration>

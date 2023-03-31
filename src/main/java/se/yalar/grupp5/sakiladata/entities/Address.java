@@ -1,0 +1,106 @@
+package se.yalar.grupp5.sakiladata.entities;
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "address")
+public class Address {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    @Column(name = "address")
+    private String address;
+
+    @Column(name = "address2")
+    private String address2;
+
+    @Column(name = "district")
+    private String district;
+
+    @ManyToOne
+    @JoinColumn(name = "city_id")
+    private City city;
+
+    @Column(name = "postal_code")
+    private int postalCode;
+
+    @Column(name = "phone")
+    private int phoneNumber;
+
+    //lägg till location
+
+    public Address(){
+
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getAddress2() {
+        return address2;
+    }
+
+    public void setAddress2(String address2) {
+        this.address2 = address2;
+    }
+
+    public String getDistrict() {
+        return district;
+    }
+
+    public void setDistrict(String district) {
+        this.district = district;
+    }
+
+    public City getCity() {
+        return city;
+    }
+
+    public void setCity(City city) {
+        this.city = city;
+    }
+
+    public int getPostalCode() {
+        return postalCode;
+    }
+
+    public void setPostalCode(int postalCode) {
+        this.postalCode = postalCode;
+    }
+
+    public int getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(int phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "id=" + id +
+                ", address='" + address + '\'' +
+                ", address2='" + address2 + '\'' +
+                ", district='" + district + '\'' +
+                ", city=" + city +
+                ", postalCode=" + postalCode +
+                ", phoneNumber=" + phoneNumber +
+                '}';
+    }
+}
