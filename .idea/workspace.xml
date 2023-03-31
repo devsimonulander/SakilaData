@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cd5c7c4-eaa3-498d-938a-97b6b9d3ec47" name="Changes" comment="Fixade dependency." />
+    <list default="true" id="9cd5c7c4-eaa3-498d-938a-97b6b9d3ec47" name="Changes" comment="Lade till ActorHandler.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/entities/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/entities/Film.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,6 +56,26 @@
     ]
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="se.yalar.grupp5.sakiladata.HelloApplication" />
+      <module name="SakilaData" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.yalar.grupp5.sakiladata.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HelloApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -64,7 +95,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680252401444</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Lade till mapp.">
+      <created>1680252861946</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680252861946</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Lade till ActorHandler.">
+      <created>1680252977649</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680252977649</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -72,6 +117,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixade dependency." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixade dependency." />
+    <MESSAGE value="Lade till mapp." />
+    <MESSAGE value="Lade till ActorHandler." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lade till ActorHandler." />
   </component>
 </project>
