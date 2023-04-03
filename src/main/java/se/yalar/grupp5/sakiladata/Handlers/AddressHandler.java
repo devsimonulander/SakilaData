@@ -7,16 +7,17 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import se.yalar.grupp5.sakiladata.entities.Address;
+import se.yalar.grupp5.sakiladata.entities.City;
 
 public class AddressHandler {
 
-    public  void getAddressById(int id) {
+    public  Address getAddressById(int id) {
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
         session.beginTransaction();
-        Address addresses = session.get(Address.class, id);
-        System.out.println("\n" + addresses.getCity() + ", " + addresses.getAddress() + "\n");
-        System.out.println("\n" + addresses.getPostalCode() + "\n");
+        Address address = session.get(Address.class, id);
+        session.close();
+        return address;
 
     }
 
@@ -65,30 +66,18 @@ public class AddressHandler {
         return 0;
     }
 
-    /* No need for this since we are using a gui.
-    public int createNewAddress() {
-        Scanner input1 = new Scanner(System.in);
-        String input = "";
+
+    public int createNewAddress(String addressString, int postalCode, City city, String district, int phoneNumber) {
         Address address = new Address();
 
-        System.out.println("Ange gatunamn");
-        input = input1.nextLine();
-        address.setStreet_name(input);
+        address.setAddress(addressString);
+        address.setCity(city);
+        address.setDistrict(district);
+        address.setPostalCode(postalCode);
+        address.setPhoneNumber(phoneNumber);
 
-        System.out.println("Ange husnummer");
-        input = input1.nextLine();
-        address.setHouse_number(Integer.parseInt(input));
-
-        System.out.println("Ange postnummer");
-        input = input1.nextLine();
-        address.setPostalCode(Integer.parseInt(input));
-
-        System.out.println("Ange stad");
-        input = input1.nextLine();
-        address.setCity(input);
-
-        return insertAdress(address);
-    }*/
+        return insertAddress(address);
+    }
 
     public void deleteExistingAddress() {
         Scanner input1 = new Scanner(System.in);
