@@ -7,12 +7,17 @@
     <list default="true" id="9cd5c7c4-eaa3-498d-938a-97b6b9d3ec47" name="Changes" comment="Lade till ActorHandler.">
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/start-view.fxml" afterDir="false" />
+    <list default="true" id="9cd5c7c4-eaa3-498d-938a-97b6b9d3ec47" name="Changes" comment="Fixade AddressHandler så att den följer nuvarande kod och så den inte har stavfel i sig.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/CategoryHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/CityHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/entities/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/entities/Film.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/ActorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/ActorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/AddressHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/AddressHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +60,22 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.5524316&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.5524316",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -89,6 +110,7 @@
       <workItem from="1680248378686" duration="2654000" />
       <workItem from="1680251043123" duration="302000" />
       <workItem from="1680513196260" duration="13613000" />
+      <workItem from="1680547492331" duration="4942000" />
     </task>
     <task id="LOCAL-00001" summary="Fixade dependency.">
       <created>1680252401444</created>
@@ -111,7 +133,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680252977649</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixade saker.">
+      <created>1680253534026</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680253534026</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fixade AddressHandler så att den följer nuvarande kod och så den inte har stavfel i sig.">
+      <created>1680561198502</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680561198502</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +157,8 @@
     <MESSAGE value="Fixade dependency." />
     <MESSAGE value="Lade till mapp." />
     <MESSAGE value="Lade till ActorHandler." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lade till ActorHandler." />
+    <MESSAGE value="Fixade saker." />
+    <MESSAGE value="Fixade AddressHandler så att den följer nuvarande kod och så den inte har stavfel i sig." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixade AddressHandler så att den följer nuvarande kod och så den inte har stavfel i sig." />
   </component>
 </project>
