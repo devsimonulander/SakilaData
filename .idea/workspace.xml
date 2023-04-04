@@ -4,65 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cd5c7c4-eaa3-498d-938a-97b6b9d3ec47" name="Changes" comment="Lade till ActorHandler.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/start-view.fxml" afterDir="false" />
-    <list default="true" id="9cd5c7c4-eaa3-498d-938a-97b6b9d3ec47" name="Changes" comment="Fixade AddressHandler så att den följer nuvarande kod och så den inte har stavfel i sig.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/CategoryHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/CityHandler.java" afterDir="false" />
+    <list default="true" id="e68e1e8f-885a-4bd8-90b7-5b45bdfac2e2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/entities/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/entities/Film.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/ActorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/ActorHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/AddressHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/AddressHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="FxmlFile" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2NllHYEgWIYtVT0CZoPTjas4bHC" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.5524316&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -71,94 +26,22 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.5524316",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
-    ]
   }
-}</component>
-  <component name="RunManager">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="se.yalar.grupp5.sakiladata.Application" />
-      <module name="SakilaData" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="se.yalar.grupp5.sakiladata.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9cd5c7c4-eaa3-498d-938a-97b6b9d3ec47" name="Changes" comment="" />
-      <created>1680246464444</created>
+      <changelist id="e68e1e8f-885a-4bd8-90b7-5b45bdfac2e2" name="Changes" comment="" />
+      <created>1680593000499</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1680246464444</updated>
-      <workItem from="1680246465497" duration="1233000" />
-      <workItem from="1680248378686" duration="2654000" />
-      <workItem from="1680251043123" duration="302000" />
-      <workItem from="1680513196260" duration="13613000" />
-      <workItem from="1680547492331" duration="4942000" />
+      <updated>1680593000499</updated>
+      <workItem from="1680593004502" duration="1239000" />
     </task>
-    <task id="LOCAL-00001" summary="Fixade dependency.">
-      <created>1680252401444</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1680252401444</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Lade till mapp.">
-      <created>1680252861946</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1680252861946</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Lade till ActorHandler.">
-      <created>1680252977649</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1680252977649</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Fixade saker.">
-      <created>1680253534026</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1680253534026</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Fixade AddressHandler så att den följer nuvarande kod och så den inte har stavfel i sig.">
-      <created>1680561198502</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1680561198502</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixade dependency." />
-    <MESSAGE value="Lade till mapp." />
-    <MESSAGE value="Lade till ActorHandler." />
-    <MESSAGE value="Fixade saker." />
-    <MESSAGE value="Fixade AddressHandler så att den följer nuvarande kod och så den inte har stavfel i sig." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixade AddressHandler så att den följer nuvarande kod och så den inte har stavfel i sig." />
   </component>
 </project>

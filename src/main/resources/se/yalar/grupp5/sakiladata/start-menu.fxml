@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.yalar.grupp5.sakiladata.Controller">
+    <children>
+        <Button fx:id="btnActor" defaultButton="true" layoutX="69.0" layoutY="73.0" mnemonicParsing="false" onAction="#actorSelected" prefHeight="52.0" prefWidth="87.0" text="Actor">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnAddress" defaultButton="true" layoutX="200.0" layoutY="73.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Address">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnCategory" defaultButton="true" layoutX="331.0" layoutY="73.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Category">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnCity" defaultButton="true" layoutX="456.0" layoutY="73.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="City">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnCountry" defaultButton="true" layoutX="69.0" layoutY="148.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Country">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnCustomer" defaultButton="true" layoutX="200.0" layoutY="148.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Customer">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnFilm" defaultButton="true" layoutX="331.0" layoutY="148.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Film">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnFilmActor" defaultButton="true" layoutX="456.0" layoutY="148.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Film_actor">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnFilmCategory" defaultButton="true" layoutX="69.0" layoutY="223.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Film_category">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnPayment" defaultButton="true" layoutX="69.0" layoutY="297.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Payment">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnFilmText" defaultButton="true" layoutX="200.0" layoutY="223.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Film_text">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnRental" defaultButton="true" layoutX="200.0" layoutY="297.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Rental">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnInventory" defaultButton="true" layoutX="331.0" layoutY="223.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Inventory">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnLanguage" defaultButton="true" layoutX="456.0" layoutY="223.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Language">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnStaff" defaultButton="true" layoutX="331.0" layoutY="297.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Staff">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Button>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="257.0" layoutY="14.0" prefHeight="40.0" prefWidth="87.0" text="Select a table" textFill="#20d2ff" underline="true" />
+        <Button fx:id="btnStore" defaultButton="true" layoutX="456.0" layoutY="297.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Store">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
