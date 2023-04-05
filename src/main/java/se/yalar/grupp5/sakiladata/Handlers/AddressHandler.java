@@ -1,4 +1,4 @@
-package Handlers;
+package se.yalar.grupp5.sakiladata.Handlers;
 
 import java.sql.Date;
 import java.util.Scanner;
