@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.yalar.grupp5.sakiladata.CreateCustomer">
+   <children>
+      <Label alignment="CENTER" layoutX="247.0" layoutY="14.0" prefHeight="48.0" prefWidth="106.0" text="Kund" textFill="#3c46f0" />
+      <Button fx:id="btnOk" layoutX="253.0" layoutY="328.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="95.0" text="Ok" />
+      <TextField fx:id="tfFirstName" layoutX="140.0" layoutY="83.0" prefHeight="25.0" prefWidth="416.0" promptText="Förnamn" />
+      <Label layoutX="45.0" layoutY="72.0" prefHeight="36.0" prefWidth="74.0" text="Förnamn" />
+      <Label layoutX="45.0" layoutY="103.0" prefHeight="36.0" prefWidth="74.0" text="Efternamn" />
+      <Label layoutX="45.0" layoutY="139.0" prefHeight="36.0" prefWidth="74.0" text="E-mail" />
+      <Label layoutX="45.0" layoutY="170.0" prefHeight="36.0" prefWidth="74.0" text="Aktiv" />
+      <TextField fx:id="tfLastName" layoutX="140.0" layoutY="114.0" prefHeight="25.0" prefWidth="416.0" promptText="Efternamn" />
+      <TextField fx:id="tfEmail" layoutX="140.0" layoutY="145.0" prefHeight="25.0" prefWidth="416.0" promptText="E-mail" />
+      <TextField fx:id="tfAktiv" layoutX="140.0" layoutY="176.0" prefHeight="25.0" prefWidth="416.0" promptText="Skriv 1 om aktiv" />
+      <Label layoutX="45.0" layoutY="200.0" prefHeight="36.0" prefWidth="74.0" text="Kund Id" />
+      <TextField fx:id="tfCustomerId" layoutX="140.0" layoutY="206.0" prefHeight="25.0" prefWidth="416.0" promptText="Kund Id" />
+      <Label layoutX="45.0" layoutY="231.0" prefHeight="36.0" prefWidth="74.0" text="Butik Id" />
+      <TextField fx:id="tfStoreId" layoutX="140.0" layoutY="237.0" prefHeight="25.0" prefWidth="416.0" promptText="Butik Id" />
+      <Label layoutX="45.0" layoutY="262.0" prefHeight="36.0" prefWidth="74.0" text="Adress Id" />
+      <TextField fx:id="tfAddressId" layoutX="140.0" layoutY="268.0" prefHeight="25.0" prefWidth="416.0" promptText="Adress Id" />
+   </children>
+</AnchorPane>

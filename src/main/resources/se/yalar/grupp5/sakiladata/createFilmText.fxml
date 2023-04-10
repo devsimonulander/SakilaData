@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.yalar.grupp5.sakiladata.CreateFilmText">
+   <children>
+      <Button fx:id="btnOk" layoutX="268.0" layoutY="314.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="64.0" text="Ok" />
+      <TextField fx:id="tfFilmId" layoutX="161.0" layoutY="80.0" prefHeight="25.0" prefWidth="378.0" promptText="Film Id" />
+      <Label alignment="CENTER" layoutX="256.0" layoutY="14.0" prefHeight="35.0" prefWidth="89.0" text="Film text" />
+      <Label layoutX="70.0" layoutY="84.0" prefHeight="17.0" prefWidth="64.0" text="Film Id" />
+      <Label layoutX="70.0" layoutY="127.0" prefHeight="17.0" prefWidth="64.0" text="Titel" />
+      <TextField fx:id="tfTitle" layoutX="161.0" layoutY="123.0" prefHeight="25.0" prefWidth="378.0" promptText="Titel" />
+      <TextField fx:id="tfDescription" layoutX="161.0" layoutY="163.0" prefHeight="25.0" prefWidth="378.0" promptText="Beskrivning" />
+      <Label layoutX="70.0" layoutY="167.0" prefHeight="17.0" prefWidth="71.0" text="Beskrivning" />
+   </children>
+</AnchorPane>

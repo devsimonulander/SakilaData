@@ -4,13 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e68e1e8f-885a-4bd8-90b7-5b45bdfac2e2" name="Changes" comment="">
+    <list default="true" id="e68e1e8f-885a-4bd8-90b7-5b45bdfac2e2" name="Changes" comment="hej">
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/CreateActor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/CrudMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/StartMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/ActorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/ActorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/AddressHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/AddressHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/CategoryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/CategoryHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/CityHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/CityHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/CustomerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/CustomerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/crud-menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/crud-menu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/start-menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/start-menu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2NxCnqqsSc6oh0SjwiF46bgARjN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,13 +51,28 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "last_directory_selection": "C:/Users/faiz-/IdeaProjects/SakilaData/src/main/java/se/yalar/grupp5/sakiladata",
+    "last_opened_file_path": "C:/Users/faiz-/IdeaProjects/OOP 3 AlarmSystem",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\faiz-\IdeaProjects\SakilaData\src\main\resources\se\yalar\grupp5\sakiladata\crudTables" />
+      <recent name="C:\Users\faiz-\IdeaProjects\SakilaData\src\main\resources\se\yalar\grupp5\sakiladata" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="se.yalar.grupp5.sakiladata" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -37,11 +81,45 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680593000499</updated>
-      <workItem from="1680593004502" duration="1239000" />
+      <workItem from="1680593004502" duration="3490000" />
+      <workItem from="1680596518910" duration="5114000" />
+      <workItem from="1680609455735" duration="2634000" />
+      <workItem from="1680682477020" duration="12591000" />
+      <workItem from="1680700982576" duration="4061000" />
+      <workItem from="1680774854275" duration="11879000" />
+      <workItem from="1680956379165" duration="5818000" />
+      <workItem from="1681112058365" duration="16291000" />
     </task>
+    <task id="LOCAL-00001" summary="hej">
+      <created>1680594532034</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680594532034</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="hej" />
+    <option name="LAST_COMMIT_MESSAGE" value="hej" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
