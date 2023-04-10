@@ -13,6 +13,9 @@ public class Language {
     @Column(name = "name")
     private String name;
 
+    @Column(name="last_update")
+    private String lastUpdate;
+
     public Language(){
 
     }
@@ -31,6 +34,14 @@ public class Language {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getLastUpdate() {
+        return lastUpdate;
+    }
+
+    public void setLastUpdate(String lastUpdate) {
+        this.lastUpdate = lastUpdate;
     }
 
     @Override

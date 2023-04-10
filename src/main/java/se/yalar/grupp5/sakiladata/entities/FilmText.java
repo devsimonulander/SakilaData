@@ -6,7 +6,6 @@ import jakarta.persistence.*;
 @Table(name = "film_text")
 public class FilmText {
 
-    // säkerställ så att det är rätt gjort på nedan attribut
     @Id
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "film_id")

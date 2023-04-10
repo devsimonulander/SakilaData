@@ -13,6 +13,9 @@ public class Country {
     @Column(name = "country")
     private String country;
 
+    @Column(name="last_update")
+    private String lastUpdate;
+
     public Country(){
 
     }
@@ -31,6 +34,14 @@ public class Country {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    public String getLastUpdate() {
+        return lastUpdate;
+    }
+
+    public void setLastUpdate(String lastUpdate) {
+        this.lastUpdate = lastUpdate;
     }
 
     @Override

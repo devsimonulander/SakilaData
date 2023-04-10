@@ -6,7 +6,6 @@ import jakarta.persistence.*;
 @Table(name = "film_category")
 public class FilmCategory {
 
-    // säkerställ så att det är rätt gjort på nedan attribut
     @Id
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "film_id")
@@ -15,6 +14,9 @@ public class FilmCategory {
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;
+
+    @Column(name="last_update")
+    private String lastUpdate;
 
     public FilmCategory(){
 
@@ -34,6 +36,14 @@ public class FilmCategory {
 
     public void setCategory(Category category) {
         this.category = category;
+    }
+
+    public String getLastUpdate() {
+        return lastUpdate;
+    }
+
+    public void setLastUpdate(String lastUpdate) {
+        this.lastUpdate = lastUpdate;
     }
 
     @Override

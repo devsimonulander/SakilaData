@@ -9,13 +9,15 @@ public class Store {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    //kolla upp unika värden i mysql
     @Column(name = "manager_staff_id")
     private int ManagerStaffId;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "address_id")
     private Address address;
+
+    @Column(name="last_update")
+    private String lastUpdate;
 
     public Store(){
 
@@ -43,6 +45,14 @@ public class Store {
 
     public void setAddress(Address address) {
         this.address = address;
+    }
+
+    public String getLastUpdate() {
+        return lastUpdate;
+    }
+
+    public void setLastUpdate(String lastUpdate) {
+        this.lastUpdate = lastUpdate;
     }
 
     @Override

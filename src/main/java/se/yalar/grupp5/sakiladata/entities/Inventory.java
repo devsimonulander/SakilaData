@@ -25,6 +25,9 @@ public class Inventory {
                 inverseJoinColumns = {@JoinColumn(name = "filme_id")})
     private List<Store> storeList = new ArrayList<>();
 
+    @Column(name="last_update")
+    private String lastUpdate;
+
     public Inventory(){
 
     }
@@ -51,6 +54,14 @@ public class Inventory {
 
     public void setStoreList(List<Store> storeList) {
         this.storeList = storeList;
+    }
+
+    public String getLastUpdate() {
+        return lastUpdate;
+    }
+
+    public void setLastUpdate(String lastUpdate) {
+        this.lastUpdate = lastUpdate;
     }
 
     @Override

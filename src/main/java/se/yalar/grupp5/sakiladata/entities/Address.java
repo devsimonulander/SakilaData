@@ -1,5 +1,6 @@
 package se.yalar.grupp5.sakiladata.entities;
 
+import org.locationtech.jts.geom.GeometryFactory;
 import jakarta.persistence.*;
 
 @Entity
@@ -19,9 +20,9 @@ public class Address {
     @Column(name = "district")
     private String district;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "city_id")
-    private City city;
+    private City city = new City();
 
     @Column(name = "postal_code")
     private int postalCode;
@@ -29,7 +30,11 @@ public class Address {
     @Column(name = "phone")
     private int phoneNumber;
 
-    //lägg till location
+    @Transient
+    GeometryFactory geometryFactory = new GeometryFactory();
+
+    @Column(name="last_update")
+    private String lastUpdate;
 
     public Address(){
 
@@ -91,6 +96,22 @@ public class Address {
         this.phoneNumber = phoneNumber;
     }
 
+    public GeometryFactory getGeometryFactory() {
+        return geometryFactory;
+    }
+
+    public void setGeometryFactory(GeometryFactory geometryFactory) {
+        this.geometryFactory = geometryFactory;
+    }
+
+    public String getLastUpdate() {
+        return lastUpdate;
+    }
+
+    public void setLastUpdate(String lastUpdate) {
+        this.lastUpdate = lastUpdate;
+    }
+
     @Override
     public String toString() {
         return "Address{" +
@@ -101,6 +122,7 @@ public class Address {
                 ", city=" + city +
                 ", postalCode=" + postalCode +
                 ", phoneNumber=" + phoneNumber +
+                ", geometryFactory=" + geometryFactory +
                 '}';
     }
 }

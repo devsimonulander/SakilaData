@@ -44,10 +44,11 @@ public class Film {
     @Column(name = "rating")
     private Rating rating;
 
-
-    //rätta till den här attributen då den är Set i mysql
     @Column(name = "special_features")
     private Set specialFeatures;
+
+    @Column(name="last_update")
+    private String lastUpdate;
 
     public Film() {
     }
@@ -148,6 +149,14 @@ public class Film {
         this.specialFeatures = specialFeatures;
     }
 
+    public String getLastUpdate() {
+        return lastUpdate;
+    }
+
+    public void setLastUpdate(String lastUpdate) {
+        this.lastUpdate = lastUpdate;
+    }
+
     @Override
     public String toString() {
         return "Film{" +
@@ -164,5 +173,12 @@ public class Film {
                 ", rating=" + rating +
                 ", specialFeatures=" + specialFeatures +
                 '}';
+    }
+    enum Rating {
+        G,
+        PG,
+        PG13,
+        R,
+        NC17
     }
 }

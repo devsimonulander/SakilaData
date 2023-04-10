@@ -3,7 +3,6 @@ package se.yalar.grupp5.sakiladata.entities;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table(name = "customer")
@@ -28,14 +27,15 @@ public class Customer {
     @Column(name = "email")
     private String email;
 
-    //säkerställ att det är en 1to1 på adressen.
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "address_id")
     private Address address;
 
-    //ta reda på hur man gör boolean i en databas.
     @Column(name = "active")
     private boolean isActive;
+
+    @Column(name="last_update")
+    private String lastUpdate;
 
     public Customer() {
     }
@@ -94,6 +94,14 @@ public class Customer {
 
     public void setActive(boolean active) {
         isActive = active;
+    }
+
+    public String getLastUpdate() {
+        return lastUpdate;
+    }
+
+    public void setLastUpdate(String lastUpdate) {
+        this.lastUpdate = lastUpdate;
     }
 
     @Override
