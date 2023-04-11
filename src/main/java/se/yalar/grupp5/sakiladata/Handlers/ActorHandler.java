@@ -1,3 +1,4 @@
+
 package se.yalar.grupp5.sakiladata.Handlers;
 
 import org.hibernate.HibernateException;
@@ -36,12 +37,13 @@ public class ActorHandler {
     public int insert(Actor newActor) {
 
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
-        Session session = sessionFactory.openSession();
-        session.beginTransaction();
-        session.persist(newActor);
+        try (Session session = sessionFactory.openSession()) {
+            session.beginTransaction();
+            session.persist(newActor);
 
-        session.getTransaction().commit();
-        session.close();
+            session.getTransaction().commit();
+            session.close();
+        }
 
         return newActor.getId();
     }
@@ -85,3 +87,4 @@ public class ActorHandler {
         return actor;
     }
 }
+

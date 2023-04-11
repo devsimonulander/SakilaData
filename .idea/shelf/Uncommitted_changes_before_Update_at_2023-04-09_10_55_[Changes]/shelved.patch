@@ -1,0 +1,753 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"e68e1e8f-885a-4bd8-90b7-5b45bdfac2e2\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"git-widget-placeholder\": \"main\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"e68e1e8f-885a-4bd8-90b7-5b45bdfac2e2\" name=\"Changes\" comment=\"\" />\r\n      <created>1680593000499</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1680593000499</updated>\r\n      <workItem from=\"1680593004502\" duration=\"1239000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision a660f83c7bb331f6f2bfe17d9d43de5959045821)
++++ b/.idea/workspace.xml	(date 1681030241141)
+@@ -4,31 +4,70 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="e68e1e8f-885a-4bd8-90b7-5b45bdfac2e2" name="Changes" comment="">
++    <list default="true" id="e68e1e8f-885a-4bd8-90b7-5b45bdfac2e2" name="Changes" comment="hej">
++      <change afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/ActorFX.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/CrudMenu.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/StartMenu.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Controller.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/ActorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/ActorHandler.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/AddressHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/AddressHandler.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/crud-menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/crud-menu.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/start-menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/start-menu.fxml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="FxmlFile" />
++        <option value="Class" />
++      </list>
++    </option>
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
++  </component>
++  <component name="ProjectId" id="2NxCnqqsSc6oh0SjwiF46bgARjN" />
++  <component name="ProjectLevelVcsManager">
++    <ConfirmationsSetting value="1" id="Add" />
+   </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "git-widget-placeholder": "main",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "vue.rearranger.settings.migration": "true"
+-  }
+-}]]></component>
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/faiz-/IdeaProjects/OOP 3 AlarmSystem&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++  }
++}</component>
++  <component name="RecentsManager">
++    <key name="MoveFile.RECENT_KEYS">
++      <recent name="C:\Users\faiz-\IdeaProjects\SakilaData\src\main\resources\se\yalar\grupp5\sakiladata" />
++    </key>
++    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
++      <recent name="se.yalar.grupp5.sakiladata" />
++    </key>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -37,11 +76,44 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1680593000499</updated>
+-      <workItem from="1680593004502" duration="1239000" />
++      <workItem from="1680593004502" duration="3490000" />
++      <workItem from="1680596518910" duration="5114000" />
++      <workItem from="1680609455735" duration="2634000" />
++      <workItem from="1680682477020" duration="12591000" />
++      <workItem from="1680700982576" duration="4061000" />
++      <workItem from="1680774854275" duration="11879000" />
++      <workItem from="1680956379165" duration="5287000" />
+     </task>
++    <task id="LOCAL-00001" summary="hej">
++      <created>1680594532034</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1680594532034</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="hej" />
++    <option name="LAST_COMMIT_MESSAGE" value="hej" />
++  </component>
++  <component name="XSLT-Support.FileAssociations.UIState">
++    <expand />
++    <select />
++  </component>
+ </project>
+\ No newline at end of file
+Index: src/main/java/se/yalar/grupp5/sakiladata/StartMenu.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/se/yalar/grupp5/sakiladata/StartMenu.java b/src/main/java/se/yalar/grupp5/sakiladata/StartMenu.java
+new file mode 100644
+--- /dev/null	(date 1680783618026)
++++ b/src/main/java/se/yalar/grupp5/sakiladata/StartMenu.java	(date 1680783618026)
+@@ -0,0 +1,158 @@
++package se.yalar.grupp5.sakiladata;
++
++import javafx.event.ActionEvent;
++import javafx.fxml.FXML;
++import javafx.fxml.FXMLLoader;
++import javafx.scene.Node;
++import javafx.scene.Parent;
++import javafx.scene.Scene;
++import javafx.scene.control.Button;
++import javafx.stage.Stage;
++import se.yalar.grupp5.sakiladata.entities.*;
++
++import java.io.IOException;
++
++public class StartMenu {
++    public static String lastBtn;
++
++    @FXML
++    private Button btnActor, btnAddress, btnCategory, btnCity, btnCountry, btnCustomer, btnFilm, btnFilmActor,
++            btnFilmCategory, btnFilmText, btnInventory, btnLanguage, btnPayment, btnRental, btnStaff, btnStore;
++    @FXML
++    void actorSelected(ActionEvent event) throws IOException {
++        Parent root = FXMLLoader.load(getClass().getResource("crud-menu.fxml"));
++        Stage window = (Stage) btnActor.getScene().getWindow();
++        window.setScene(new Scene(root, 600, 400));
++        btnActor.setText("Actor");
++        Button clickedBtn = (Button) event.getSource();
++        lastBtn = clickedBtn.getText();
++
++    }
++    @FXML
++    void addressSelected(ActionEvent event) throws IOException {
++        Parent root = FXMLLoader.load(getClass().getResource("crud-menu.fxml"));
++        Stage window = (Stage) btnAddress.getScene().getWindow();
++        window.setScene(new Scene(root, 600, 400));
++        btnAddress.setText("Address");
++        Button clickedBtn = (Button) event.getSource();
++        lastBtn = clickedBtn.getText();
++    }
++    @FXML
++    void categorySelected(ActionEvent event) throws IOException {
++        Parent root = FXMLLoader.load(getClass().getResource("crud-menu.fxml"));
++        Stage window = (Stage) btnCategory.getScene().getWindow();
++        window.setScene(new Scene(root, 600, 400));
++    }
++    @FXML
++    void citySelected(ActionEvent event) throws IOException {
++        Parent root = FXMLLoader.load(getClass().getResource("crud-menu.fxml"));
++        Stage window = (Stage) btnCity.getScene().getWindow();
++        window.setScene(new Scene(root, 600, 400));
++        btnCity.setText("City");
++        Button clickedBtn = (Button) event.getSource();
++        lastBtn = clickedBtn.getText();
++    }
++    @FXML
++    void countrySelected(ActionEvent event) throws IOException {
++        Parent root = FXMLLoader.load(getClass().getResource("crud-menu.fxml"));
++        Stage window = (Stage) btnCountry.getScene().getWindow();
++        window.setScene(new Scene(root, 600, 400));
++    }
++    @FXML
++    void customerSelected(ActionEvent event) throws IOException {
++        Parent root = FXMLLoader.load(getClass().getResource("crud-menu.fxml"));
++        Stage window = (Stage) btnCustomer.getScene().getWindow();
++        window.setScene(new Scene(root, 600, 400));
++        btnCustomer.setText("Customer");
++        Button clickedBtn = (Button) event.getSource();
++        lastBtn = clickedBtn.getText();
++    }
++    @FXML
++    void filmSelected(ActionEvent event) throws IOException {
++        Parent root = FXMLLoader.load(getClass().getResource("crud-menu.fxml"));
++        Stage window = (Stage) btnFilm.getScene().getWindow();
++        window.setScene(new Scene(root, 600, 400));
++        btnFilm.setText("Film");
++        Button clickedBtn = (Button) event.getSource();
++        lastBtn = clickedBtn.getText();
++    }
++    @FXML
++    void filmActorSelected(ActionEvent event) throws IOException {
++        Parent root = FXMLLoader.load(getClass().getResource("crud-menu.fxml"));
++        Stage window = (Stage) btnFilmActor.getScene().getWindow();
++        window.setScene(new Scene(root, 600, 400));
++        btnFilmActor.setText("FilmActor");
++        Button clickedBtn = (Button) event.getSource();
++        lastBtn = clickedBtn.getText();
++    }
++    @FXML
++    void filmCategorySelected(ActionEvent event) throws IOException {
++        Parent root = FXMLLoader.load(getClass().getResource("crud-menu.fxml"));
++        Stage window = (Stage) btnFilmCategory.getScene().getWindow();
++        window.setScene(new Scene(root, 600, 400));
++        btnFilmCategory.setText("FilmCategory");
++        Button clickedBtn = (Button) event.getSource();
++        lastBtn = clickedBtn.getText();
++    }
++    @FXML
++    void filmTextSelected(ActionEvent event) throws IOException {
++        Parent root = FXMLLoader.load(getClass().getResource("crud-menu.fxml"));
++        Stage window = (Stage) btnFilmText.getScene().getWindow();
++        window.setScene(new Scene(root, 600, 400));
++        btnFilmText.setText("FilmText");
++        Button clickedBtn = (Button) event.getSource();
++        lastBtn = clickedBtn.getText();
++    }
++    @FXML
++    void inventorySelected(ActionEvent event) throws IOException {
++        Parent root = FXMLLoader.load(getClass().getResource("crud-menu.fxml"));
++        Stage window = (Stage) btnInventory.getScene().getWindow();
++        window.setScene(new Scene(root, 600, 400));
++        btnInventory.setText("Inventory");
++        Button clickedBtn = (Button) event.getSource();
++        lastBtn = clickedBtn.getText();
++    }
++    @FXML
++    void languageSelected(ActionEvent event) throws IOException {
++        Parent root = FXMLLoader.load(getClass().getResource("crud-menu.fxml"));
++        Stage window = (Stage) btnLanguage.getScene().getWindow();
++        window.setScene(new Scene(root, 600, 400));
++    }
++    @FXML
++    void paymentSelected(ActionEvent event) throws IOException {
++        Parent root = FXMLLoader.load(getClass().getResource("crud-menu.fxml"));
++        Stage window = (Stage) btnPayment.getScene().getWindow();
++        window.setScene(new Scene(root, 600, 400));
++        btnPayment.setText("Payment");
++        Button clickedBtn = (Button) event.getSource();
++        lastBtn = clickedBtn.getText();
++    }
++    @FXML
++    void rentalSelected(ActionEvent event) throws IOException {
++        Parent root = FXMLLoader.load(getClass().getResource("crud-menu.fxml"));
++        Stage window = (Stage) btnRental.getScene().getWindow();
++        window.setScene(new Scene(root, 600, 400));
++        btnRental.setText("Rental");
++        Button clickedBtn = (Button) event.getSource();
++        lastBtn = clickedBtn.getText();
++    }
++    @FXML
++    void staffSelected(ActionEvent event) throws IOException {
++        Parent root = FXMLLoader.load(getClass().getResource("crud-menu.fxml"));
++        Stage window = (Stage) btnStaff.getScene().getWindow();
++        window.setScene(new Scene(root, 600, 400));
++        btnStaff.setText("Staff");
++        Button clickedBtn = (Button) event.getSource();
++        lastBtn = clickedBtn.getText();
++    }
++    @FXML
++    void storeSelected(ActionEvent event) throws IOException {
++        Parent root = FXMLLoader.load(getClass().getResource("crud-menu.fxml"));
++        Stage window = (Stage) btnStore.getScene().getWindow();
++        window.setScene(new Scene(root, 600, 400));
++        btnStore.setText("Store");
++        Button clickedBtn = (Button) event.getSource();
++        lastBtn = clickedBtn.getText();
++    }
++
++}
+Index: src/main/java/se/yalar/grupp5/sakiladata/CrudMenu.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/se/yalar/grupp5/sakiladata/CrudMenu.java b/src/main/java/se/yalar/grupp5/sakiladata/CrudMenu.java
+new file mode 100644
+--- /dev/null	(date 1680957721777)
++++ b/src/main/java/se/yalar/grupp5/sakiladata/CrudMenu.java	(date 1680957721777)
+@@ -0,0 +1,110 @@
++package se.yalar.grupp5.sakiladata;
++
++import javafx.event.ActionEvent;
++import javafx.fxml.FXML;
++import javafx.fxml.FXMLLoader;
++import javafx.scene.Parent;
++import javafx.scene.Scene;
++import javafx.scene.control.Button;
++import javafx.stage.Stage;
++
++import java.io.IOException;
++import java.lang.reflect.InvocationTargetException;
++
++public class CrudMenu {
++
++    @FXML
++    private Button btnBack;
++
++    @FXML
++    private Button btnCreate;
++
++    @FXML
++    private Button btnDelete;
++
++    @FXML
++    private Button btnRead;
++
++    @FXML
++    private Button btnUpdate;
++    private StartMenu startMenu;
++
++    @FXML
++    void createSelected(ActionEvent event) throws IOException {
++        String info = StartMenu.lastBtn;
++        try {
++            switch (info){
++                case "Actor":
++                    Parent rootActor = FXMLLoader.load(getClass().getResource("createActor.fxml"));
++                    Stage windowActor = (Stage) btnCreate.getScene().getWindow();
++                    windowActor.setScene(new Scene(rootActor, 600, 400));
++                    break;
++                case "Address":
++                    Parent rootAddress = FXMLLoader.load(getClass().getResource("createAddress.fxml"));
++                    Stage windowAddress = (Stage) btnCreate.getScene().getWindow();
++                    windowAddress.setScene(new Scene(rootAddress, 600, 400));
++                    break;
++                case "City":
++                    Parent rootCity = FXMLLoader.load(getClass().getResource("createCity.fxml"));
++                    Stage windowCity = (Stage) btnCreate.getScene().getWindow();
++                    windowCity.setScene(new Scene(rootCity, 600, 400));
++                    break;
++                case "Customer":
++                    Parent rootCustomer = FXMLLoader.load(getClass().getResource("createCustomer.fxml"));
++                    Stage windowCustomer = (Stage) btnCreate.getScene().getWindow();
++                    windowCustomer.setScene(new Scene(rootCustomer, 600, 400));
++                    break;
++                case "Film":
++                    Parent rootFilm = FXMLLoader.load(getClass().getResource("createFilm.fxml"));
++                    Stage windowFilm = (Stage) btnCreate.getScene().getWindow();
++                    windowFilm.setScene(new Scene(rootFilm, 600, 400));
++                    break;
++                case "FilmActor":
++                    Parent rootFilmActor = FXMLLoader.load(getClass().getResource("createFilmActorFX.fxml"));
++                    Stage windowFilmActor = (Stage) btnCreate.getScene().getWindow();
++                    windowFilmActor.setScene(new Scene(rootFilmActor, 600, 400));
++                    break;
++                case "FilmCategory":
++                    Parent rootFilmCategory = FXMLLoader.load(getClass().getResource("createFilmCategoryFX.fxml"));
++                    Stage windowFilmCategory = (Stage) btnCreate.getScene().getWindow();
++                    windowFilmCategory.setScene(new Scene(rootFilmCategory, 600, 400));
++                    break;
++                case "FilmText":
++                    Parent rootFilmText = FXMLLoader.load(getClass().getResource("createFilmText.fxml"));
++                    Stage windowFilmText = (Stage) btnCreate.getScene().getWindow();
++                    windowFilmText.setScene(new Scene(rootFilmText, 600, 400));
++                    break;
++                case "Inventory":
++                    Parent rootInventory = FXMLLoader.load(getClass().getResource("createInventory.fxml"));
++                    Stage windowInventory = (Stage) btnCreate.getScene().getWindow();
++                    windowInventory.setScene(new Scene(rootInventory, 600, 400));
++                    break;
++                case "Payment":
++                    Parent rootPayment = FXMLLoader.load(getClass().getResource("createPayment.fxml"));
++                    Stage windowPayment = (Stage) btnCreate.getScene().getWindow();
++                    windowPayment.setScene(new Scene(rootPayment, 600, 400));
++                    break;
++                case "Rental":
++                    Parent rootRental = FXMLLoader.load(getClass().getResource("createRental.fxml"));
++                    Stage windowRental = (Stage) btnCreate.getScene().getWindow();
++                    windowRental.setScene(new Scene(rootRental, 600, 400));
++                    break;
++                case "Staff":
++                    Parent rootStaff = FXMLLoader.load(getClass().getResource("createStaff.fxml"));
++                    Stage windowStaff = (Stage) btnCreate.getScene().getWindow();
++                    windowStaff.setScene(new Scene(rootStaff, 600, 400));
++                    break;
++                case "Store":
++                    Parent rootStore = FXMLLoader.load(getClass().getResource("createStore.fxml"));
++                    Stage windowStore = (Stage) btnCreate.getScene().getWindow();
++                    windowStore.setScene(new Scene(rootStore, 600, 400));
++                    break;
++            }
++        } catch (Exception e) {
++            e.printStackTrace();
++        }
++
++
++    }
++
++}
+Index: src/main/java/se/yalar/grupp5/sakiladata/Controller.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package se.yalar.grupp5.sakiladata;\r\n\r\nimport javafx.fxml.FXML;\r\nimport javafx.fxml.FXMLLoader;\r\nimport javafx.scene.Parent;\r\nimport javafx.scene.Scene;\r\nimport javafx.scene.control.Button;\r\nimport javafx.stage.Stage;\r\nimport java.io.IOException;\r\nimport javafx.event.ActionEvent;\r\nimport javafx.scene.control.Label;\r\n\r\npublic class Controller {\r\n\r\n    @FXML\r\n    private Button btnStart, btnActor, btnAddress, btnCategory, btnCity, btnCountry, btnCustomer, btnFilm, btnFilmActor,\r\n    btnFilmCategory, btnFilmText, btnInventory, btnLanguage, btnPayment, btnRental, btnStaff, btnStore;\r\n\r\n    @FXML\r\n    private Label welcomeText;\r\n\r\n    @FXML\r\n    void onStart(ActionEvent event) throws IOException {\r\n        Parent root = FXMLLoader.load(getClass().getResource(\"start-menu.fxml\"));\r\n        Stage window = (Stage) btnStart.getScene().getWindow();\r\n        window.setScene(new Scene(root, 600, 400));\r\n    }\r\n    @FXML\r\n    void actorSelected(ActionEvent event) throws IOException {\r\n        Parent root = FXMLLoader.load(getClass().getResource(\"crud-menu.fxml\"));\r\n        Stage window = (Stage) btnActor.getScene().getWindow();\r\n        window.setScene(new Scene(root, 600, 400));\r\n    }\r\n}\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/se/yalar/grupp5/sakiladata/Controller.java b/src/main/java/se/yalar/grupp5/sakiladata/Controller.java
+--- a/src/main/java/se/yalar/grupp5/sakiladata/Controller.java	(revision a660f83c7bb331f6f2bfe17d9d43de5959045821)
++++ b/src/main/java/se/yalar/grupp5/sakiladata/Controller.java	(date 1680685482436)
+@@ -8,16 +8,11 @@
+ import javafx.stage.Stage;
+ import java.io.IOException;
+ import javafx.event.ActionEvent;
+-import javafx.scene.control.Label;
+ 
+ public class Controller {
+ 
+     @FXML
+-    private Button btnStart, btnActor, btnAddress, btnCategory, btnCity, btnCountry, btnCustomer, btnFilm, btnFilmActor,
+-    btnFilmCategory, btnFilmText, btnInventory, btnLanguage, btnPayment, btnRental, btnStaff, btnStore;
+-
+-    @FXML
+-    private Label welcomeText;
++    private Button btnStart;
+ 
+     @FXML
+     void onStart(ActionEvent event) throws IOException {
+@@ -25,11 +20,6 @@
+         Stage window = (Stage) btnStart.getScene().getWindow();
+         window.setScene(new Scene(root, 600, 400));
+     }
+-    @FXML
+-    void actorSelected(ActionEvent event) throws IOException {
+-        Parent root = FXMLLoader.load(getClass().getResource("crud-menu.fxml"));
+-        Stage window = (Stage) btnActor.getScene().getWindow();
+-        window.setScene(new Scene(root, 600, 400));
+-    }
++
+ }
+ 
+Index: src/main/resources/se/yalar/grupp5/sakiladata/crud-menu.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import javafx.scene.control.Button?>\r\n<?import javafx.scene.layout.AnchorPane?>\r\n\r\n\r\n<AnchorPane maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"400.0\" prefWidth=\"600.0\" xmlns=\"http://javafx.com/javafx/19\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"se.yalar.grupp5.sakiladata.Controller\">\r\n   <children>\r\n      <Button fx:id=\"btnCreate\" defaultButton=\"true\" layoutX=\"107.0\" layoutY=\"56.0\" mnemonicParsing=\"false\" prefHeight=\"102.0\" prefWidth=\"136.0\" text=\"Create\" />\r\n      <Button fx:id=\"btnDelete\" defaultButton=\"true\" layoutX=\"354.0\" layoutY=\"248.0\" mnemonicParsing=\"false\" prefHeight=\"102.0\" prefWidth=\"136.0\" text=\"Delete\" />\r\n      <Button fx:id=\"btnUpdate\" defaultButton=\"true\" layoutX=\"107.0\" layoutY=\"248.0\" mnemonicParsing=\"false\" prefHeight=\"102.0\" prefWidth=\"136.0\" text=\"Update\" />\r\n      <Button fx:id=\"btnRead\" defaultButton=\"true\" layoutX=\"354.0\" layoutY=\"56.0\" mnemonicParsing=\"false\" prefHeight=\"102.0\" prefWidth=\"136.0\" text=\"Read\" />\r\n      <Button fx:id=\"btnBack\" layoutY=\"-3.0\" mnemonicParsing=\"false\" onAction=\"#onStart\" prefHeight=\"30.0\" prefWidth=\"48.0\" text=\"Back\" />\r\n   </children>\r\n</AnchorPane>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/se/yalar/grupp5/sakiladata/crud-menu.fxml b/src/main/resources/se/yalar/grupp5/sakiladata/crud-menu.fxml
+--- a/src/main/resources/se/yalar/grupp5/sakiladata/crud-menu.fxml	(revision a660f83c7bb331f6f2bfe17d9d43de5959045821)
++++ b/src/main/resources/se/yalar/grupp5/sakiladata/crud-menu.fxml	(date 1680792015483)
+@@ -1,15 +1,14 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+-<?import javafx.scene.control.Button?>
+-<?import javafx.scene.layout.AnchorPane?>
++<?import javafx.scene.control.*?>
++<?import javafx.scene.layout.*?>
+ 
+-
+-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.yalar.grupp5.sakiladata.Controller">
++<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.yalar.grupp5.sakiladata.CrudMenu">
+    <children>
+-      <Button fx:id="btnCreate" defaultButton="true" layoutX="107.0" layoutY="56.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="136.0" text="Create" />
+-      <Button fx:id="btnDelete" defaultButton="true" layoutX="354.0" layoutY="248.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="136.0" text="Delete" />
+-      <Button fx:id="btnUpdate" defaultButton="true" layoutX="107.0" layoutY="248.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="136.0" text="Update" />
+-      <Button fx:id="btnRead" defaultButton="true" layoutX="354.0" layoutY="56.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="136.0" text="Read" />
+-      <Button fx:id="btnBack" layoutY="-3.0" mnemonicParsing="false" onAction="#onStart" prefHeight="30.0" prefWidth="48.0" text="Back" />
++      <Button fx:id="btnCreate" defaultButton="true" layoutX="107.0" layoutY="56.0" mnemonicParsing="false" onAction="#createSelected" prefHeight="102.0" prefWidth="136.0" text="Skapa" />
++      <Button fx:id="btnDelete" defaultButton="true" layoutX="354.0" layoutY="248.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="136.0" text="Radera" />
++      <Button fx:id="btnUpdate" defaultButton="true" layoutX="107.0" layoutY="248.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="136.0" text="Updatera" />
++      <Button fx:id="btnRead" defaultButton="true" layoutX="354.0" layoutY="56.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="136.0" text="Visa" />
++      <Button fx:id="btnBack" layoutY="-3.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="48.0" text="Back" />
+    </children>
+ </AnchorPane>
+Index: src/main/java/se/yalar/grupp5/sakiladata/Handlers/ActorHandler.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package se.yalar.grupp5.sakiladata.Handlers;\r\n\r\nimport org.hibernate.Session;\r\nimport org.hibernate.SessionFactory;\r\nimport org.hibernate.cfg.Configuration;\r\nimport se.yalar.grupp5.sakiladata.entities.Actor;\r\nimport se.yalar.grupp5.sakiladata.entities.Address;\r\n\r\npublic class ActorHandler {\r\n    public int insertAddress(Actor newActor) {\r\n\r\n        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();\r\n        Session session = sessionFactory.openSession();\r\n        session.beginTransaction();\r\n        session.persist(newActor);\r\n\r\n        session.getTransaction().commit();\r\n        session.close();\r\n\r\n        return newActor.getId();\r\n    }\r\n\r\n    public int updateActor(Actor updateActor) {\r\n\r\n        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();\r\n        Session session = sessionFactory.openSession();\r\n        session.beginTransaction();\r\n        Actor actor = session.get(Actor.class, updateActor.getId());\r\n        actor.setFirstName(updateActor.getFirstName());\r\n        actor.setLastName(updateActor.getLastName());\r\n        session.update(actor);\r\n\r\n        session.getTransaction().commit();\r\n        session.close();\r\n        return 0;\r\n    }\r\n\r\n    public int deleteActor(int id) {\r\n\r\n        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();\r\n        Session session = sessionFactory.openSession();\r\n        session.beginTransaction();\r\n\r\n        Actor actor = session.get(Actor.class, id);\r\n\r\n        session.delete(actor);\r\n\r\n        session.getTransaction().commit();\r\n        session.close();\r\n        return 0;\r\n    }\r\n\r\n    public Actor getActorById(int id){\r\n        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();\r\n        Session session = sessionFactory.openSession();\r\n        session.beginTransaction();\r\n        Actor actor = session.get(Actor.class, id);\r\n        session.close();\r\n        return actor;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/se/yalar/grupp5/sakiladata/Handlers/ActorHandler.java b/src/main/java/se/yalar/grupp5/sakiladata/Handlers/ActorHandler.java
+--- a/src/main/java/se/yalar/grupp5/sakiladata/Handlers/ActorHandler.java	(revision a660f83c7bb331f6f2bfe17d9d43de5959045821)
++++ b/src/main/java/se/yalar/grupp5/sakiladata/Handlers/ActorHandler.java	(date 1680594713782)
+@@ -1,3 +1,4 @@
++/*
+ package se.yalar.grupp5.sakiladata.Handlers;
+ 
+ import org.hibernate.Session;
+@@ -10,12 +11,13 @@
+     public int insertAddress(Actor newActor) {
+ 
+         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+-        Session session = sessionFactory.openSession();
+-        session.beginTransaction();
+-        session.persist(newActor);
++        try (Session session = sessionFactory.openSession()) {
++            session.beginTransaction();
++            session.persist(newActor);
+ 
+-        session.getTransaction().commit();
+-        session.close();
++            session.getTransaction().commit();
++            session.close();
++        }
+ 
+         return newActor.getId();
+     }
+@@ -59,3 +61,4 @@
+         return actor;
+     }
+ }
++*/
+Index: src/main/java/se/yalar/grupp5/sakiladata/ActorFX.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/se/yalar/grupp5/sakiladata/ActorFX.java b/src/main/java/se/yalar/grupp5/sakiladata/ActorFX.java
+new file mode 100644
+--- /dev/null	(date 1680958283092)
++++ b/src/main/java/se/yalar/grupp5/sakiladata/ActorFX.java	(date 1680958283092)
+@@ -0,0 +1,28 @@
++package se.yalar.grupp5.sakiladata;
++
++import javafx.event.ActionEvent;
++import javafx.fxml.FXML;
++import javafx.fxml.FXMLLoader;
++import javafx.scene.Parent;
++import javafx.scene.Scene;
++import javafx.scene.control.Button;
++import javafx.scene.control.TextField;
++import javafx.stage.Stage;
++
++import java.io.IOException;
++
++public class ActorFX {
++
++    @FXML
++    private Button btnOk;
++    @FXML
++    private TextField tfFirstName, tfLastName;
++
++    /*@FXML
++    void actorFX(ActionEvent event) throws IOException {
++        Parent root = FXMLLoader.load(getClass().getResource("createActor.fxml"));
++        Stage window = (Stage) btnActor.getScene().getWindow();
++        window.setScene(new Scene(root, 600, 400));
++    }*/
++
++}
+Index: src/main/java/se/yalar/grupp5/sakiladata/Handlers/AddressHandler.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Handlers;\r\n\r\nimport java.sql.Date;\r\nimport java.util.Scanner;\r\n\r\nimport org.hibernate.Session;\r\nimport org.hibernate.SessionFactory;\r\nimport org.hibernate.cfg.Configuration;\r\nimport se.yalar.grupp5.sakiladata.entities.Address;\r\nimport se.yalar.grupp5.sakiladata.entities.City;\r\n\r\npublic class AddressHandler {\r\n\r\n    public  Address getAddressById(int id) {\r\n        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();\r\n        Session session = sessionFactory.openSession();\r\n        session.beginTransaction();\r\n        Address address = session.get(Address.class, id);\r\n        session.close();\r\n        return address;\r\n\r\n    }\r\n\r\n    public int insertAddress(Address newAddress) {\r\n\r\n        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();\r\n        Session session = sessionFactory.openSession();\r\n        session.beginTransaction();\r\n        session.persist(newAddress);\r\n\r\n        session.getTransaction().commit();\r\n        session.close();\r\n\r\n        return newAddress.getId();\r\n    }\r\n\r\n    public int updateAddress(Address updateAddress) {\r\n\r\n        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();\r\n        Session session = sessionFactory.openSession();\r\n        session.beginTransaction();\r\n        Address address = session.get(Address.class, updateAddress.getId());\r\n        address.setAddress(updateAddress.getAddress());\r\n        address.setCity(updateAddress.getCity());\r\n        address.setPhoneNumber(updateAddress.getPhoneNumber());\r\n        address.setPostalCode(updateAddress.getPostalCode());\r\n        session.update(address);\r\n\r\n        session.getTransaction().commit();\r\n        session.close();\r\n        return 0;\r\n    }\r\n\r\n    public int deleteAddress(int id) {\r\n\r\n        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();\r\n        Session session = sessionFactory.openSession();\r\n        session.beginTransaction();\r\n\r\n        Address address = session.get(Address.class, id);\r\n\r\n        session.delete(address);\r\n\r\n        session.getTransaction().commit();\r\n        session.close();\r\n        return 0;\r\n    }\r\n\r\n\r\n    public int createNewAddress(String addressString, int postalCode, City city, String district, int phoneNumber) {\r\n        Address address = new Address();\r\n\r\n        address.setAddress(addressString);\r\n        address.setCity(city);\r\n        address.setDistrict(district);\r\n        address.setPostalCode(postalCode);\r\n        address.setPhoneNumber(phoneNumber);\r\n\r\n        return insertAddress(address);\r\n    }\r\n\r\n    public void deleteExistingAddress() {\r\n        Scanner input1 = new Scanner(System.in);\r\n        String input = \"\";\r\n        Address adress = new Address();\r\n\r\n        System.out.println(\"Ange ID för adressen du ska ta bort\");\r\n        input = input1.nextLine();\r\n\r\n        deleteAddress(Integer.parseInt(input));\r\n\r\n        System.out.println(\"Ny kund tillagd, med ID \" + adress.getId());\r\n    }\r\n\r\n    /* No need for this since we are using a gui\r\n    public void updateExistingAddress() {\r\n        Scanner input1 = new Scanner(System.in);\r\n        String input = \"\";\r\n        Address adress = new Address();\r\n\r\n        System.out.println(\"Ange ID för adress du ska uppdatera\");\r\n        input = input1.nextLine();\r\n        adress.setAdress_id(Integer.parseInt(input));\r\n\r\n        System.out.println(\"Ange ny gata\");\r\n        input = input1.nextLine();\r\n        adress.setStreet_name(input);\r\n\r\n        System.out.println(\"Ange nytt gatunummer\");\r\n        input = input1.nextLine();\r\n        adress.setHouse_number(Integer.parseInt(input));\r\n\r\n        System.out.println(\"Ange ny stad\");\r\n        input = input1.nextLine();\r\n        adress.setCity(input);\r\n\r\n        System.out.println(\"Ange nytt postnummer\");\r\n        input = input1.nextLine();\r\n        adress.setPostalCode(Integer.parseInt(input));\r\n\r\n        updateAdress(adress);\r\n\r\n        System.out.println(\"Kund är nu uppdaterad!\");\r\n    }*/\r\n\r\n    public void showAddress() {\r\n        Scanner input1 = new Scanner(System.in);\r\n        String input = \"\";\r\n\r\n        System.out.println(\"Ange ID för adress du vill visa\");\r\n        input = input1.nextLine();\r\n\r\n        getAddressById(Integer.parseInt(input));\r\n\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/se/yalar/grupp5/sakiladata/Handlers/AddressHandler.java b/src/main/java/se/yalar/grupp5/sakiladata/Handlers/AddressHandler.java
+--- a/src/main/java/se/yalar/grupp5/sakiladata/Handlers/AddressHandler.java	(revision a660f83c7bb331f6f2bfe17d9d43de5959045821)
++++ b/src/main/java/se/yalar/grupp5/sakiladata/Handlers/AddressHandler.java	(date 1680594773701)
+@@ -1,4 +1,5 @@
+-package Handlers;
++/*
++package se.yalar.grupp5.sakiladata.Handlers;
+ 
+ import java.sql.Date;
+ import java.util.Scanner;
+@@ -92,7 +93,8 @@
+         System.out.println("Ny kund tillagd, med ID " + adress.getId());
+     }
+ 
+-    /* No need for this since we are using a gui
++    */
++/* No need for this since we are using a gui
+     public void updateExistingAddress() {
+         Scanner input1 = new Scanner(System.in);
+         String input = "";
+@@ -121,7 +123,8 @@
+         updateAdress(adress);
+ 
+         System.out.println("Kund är nu uppdaterad!");
+-    }*/
++    }*//*
++
+ 
+     public void showAddress() {
+         Scanner input1 = new Scanner(System.in);
+@@ -133,4 +136,4 @@
+         getAddressById(Integer.parseInt(input));
+ 
+     }
+-}
+\ No newline at end of file
++}*/
+Index: src/main/resources/se/yalar/grupp5/sakiladata/start-menu.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import javafx.geometry.Insets?>\r\n<?import javafx.scene.control.Button?>\r\n<?import javafx.scene.control.Label?>\r\n<?import javafx.scene.layout.AnchorPane?>\r\n<?import javafx.scene.text.Font?>\r\n\r\n<AnchorPane prefHeight=\"400.0\" prefWidth=\"600.0\" xmlns=\"http://javafx.com/javafx/19\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"se.yalar.grupp5.sakiladata.Controller\">\r\n    <children>\r\n        <Button fx:id=\"btnActor\" defaultButton=\"true\" layoutX=\"69.0\" layoutY=\"73.0\" mnemonicParsing=\"false\" onAction=\"#actorSelected\" prefHeight=\"52.0\" prefWidth=\"87.0\" text=\"Actor\">\r\n            <opaqueInsets>\r\n                <Insets />\r\n            </opaqueInsets>\r\n            <font>\r\n                <Font size=\"11.0\" />\r\n            </font>\r\n        </Button>\r\n        <Button fx:id=\"btnAddress\" defaultButton=\"true\" layoutX=\"200.0\" layoutY=\"73.0\" mnemonicParsing=\"false\" prefHeight=\"52.0\" prefWidth=\"87.0\" text=\"Address\">\r\n            <font>\r\n                <Font size=\"11.0\" />\r\n            </font>\r\n        </Button>\r\n        <Button fx:id=\"btnCategory\" defaultButton=\"true\" layoutX=\"331.0\" layoutY=\"73.0\" mnemonicParsing=\"false\" prefHeight=\"52.0\" prefWidth=\"87.0\" text=\"Category\">\r\n            <font>\r\n                <Font size=\"11.0\" />\r\n            </font>\r\n        </Button>\r\n        <Button fx:id=\"btnCity\" defaultButton=\"true\" layoutX=\"456.0\" layoutY=\"73.0\" mnemonicParsing=\"false\" prefHeight=\"52.0\" prefWidth=\"87.0\" text=\"City\">\r\n            <font>\r\n                <Font size=\"11.0\" />\r\n            </font>\r\n        </Button>\r\n        <Button fx:id=\"btnCountry\" defaultButton=\"true\" layoutX=\"69.0\" layoutY=\"148.0\" mnemonicParsing=\"false\" prefHeight=\"52.0\" prefWidth=\"87.0\" text=\"Country\">\r\n            <font>\r\n                <Font size=\"11.0\" />\r\n            </font>\r\n        </Button>\r\n        <Button fx:id=\"btnCustomer\" defaultButton=\"true\" layoutX=\"200.0\" layoutY=\"148.0\" mnemonicParsing=\"false\" prefHeight=\"52.0\" prefWidth=\"87.0\" text=\"Customer\">\r\n            <font>\r\n                <Font size=\"11.0\" />\r\n            </font>\r\n        </Button>\r\n        <Button fx:id=\"btnFilm\" defaultButton=\"true\" layoutX=\"331.0\" layoutY=\"148.0\" mnemonicParsing=\"false\" prefHeight=\"52.0\" prefWidth=\"87.0\" text=\"Film\">\r\n            <font>\r\n                <Font size=\"11.0\" />\r\n            </font>\r\n        </Button>\r\n        <Button fx:id=\"btnFilmActor\" defaultButton=\"true\" layoutX=\"456.0\" layoutY=\"148.0\" mnemonicParsing=\"false\" prefHeight=\"52.0\" prefWidth=\"87.0\" text=\"Film_actor\">\r\n            <font>\r\n                <Font size=\"11.0\" />\r\n            </font>\r\n        </Button>\r\n        <Button fx:id=\"btnFilmCategory\" defaultButton=\"true\" layoutX=\"69.0\" layoutY=\"223.0\" mnemonicParsing=\"false\" prefHeight=\"52.0\" prefWidth=\"87.0\" text=\"Film_category\">\r\n            <font>\r\n                <Font size=\"11.0\" />\r\n            </font>\r\n        </Button>\r\n        <Button fx:id=\"btnPayment\" defaultButton=\"true\" layoutX=\"69.0\" layoutY=\"297.0\" mnemonicParsing=\"false\" prefHeight=\"52.0\" prefWidth=\"87.0\" text=\"Payment\">\r\n            <font>\r\n                <Font size=\"11.0\" />\r\n            </font>\r\n        </Button>\r\n        <Button fx:id=\"btnFilmText\" defaultButton=\"true\" layoutX=\"200.0\" layoutY=\"223.0\" mnemonicParsing=\"false\" prefHeight=\"52.0\" prefWidth=\"87.0\" text=\"Film_text\">\r\n            <font>\r\n                <Font size=\"11.0\" />\r\n            </font>\r\n        </Button>\r\n        <Button fx:id=\"btnRental\" defaultButton=\"true\" layoutX=\"200.0\" layoutY=\"297.0\" mnemonicParsing=\"false\" prefHeight=\"52.0\" prefWidth=\"87.0\" text=\"Rental\">\r\n            <font>\r\n                <Font size=\"11.0\" />\r\n            </font>\r\n        </Button>\r\n        <Button fx:id=\"btnInventory\" defaultButton=\"true\" layoutX=\"331.0\" layoutY=\"223.0\" mnemonicParsing=\"false\" prefHeight=\"52.0\" prefWidth=\"87.0\" text=\"Inventory\">\r\n            <font>\r\n                <Font size=\"11.0\" />\r\n            </font>\r\n        </Button>\r\n        <Button fx:id=\"btnLanguage\" defaultButton=\"true\" layoutX=\"456.0\" layoutY=\"223.0\" mnemonicParsing=\"false\" prefHeight=\"52.0\" prefWidth=\"87.0\" text=\"Language\">\r\n            <font>\r\n                <Font size=\"11.0\" />\r\n            </font>\r\n        </Button>\r\n        <Button fx:id=\"btnStaff\" defaultButton=\"true\" layoutX=\"331.0\" layoutY=\"297.0\" mnemonicParsing=\"false\" prefHeight=\"52.0\" prefWidth=\"87.0\" text=\"Staff\">\r\n            <font>\r\n                <Font size=\"11.0\" />\r\n            </font>\r\n        </Button>\r\n        <Label alignment=\"CENTER\" contentDisplay=\"CENTER\" layoutX=\"257.0\" layoutY=\"14.0\" prefHeight=\"40.0\" prefWidth=\"87.0\" text=\"Select a table\" textFill=\"#20d2ff\" underline=\"true\" />\r\n        <Button fx:id=\"btnStore\" defaultButton=\"true\" layoutX=\"456.0\" layoutY=\"297.0\" mnemonicParsing=\"false\" prefHeight=\"52.0\" prefWidth=\"87.0\" text=\"Store\">\r\n            <font>\r\n                <Font size=\"11.0\" />\r\n            </font>\r\n        </Button>\r\n    </children>\r\n</AnchorPane>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/se/yalar/grupp5/sakiladata/start-menu.fxml b/src/main/resources/se/yalar/grupp5/sakiladata/start-menu.fxml
+--- a/src/main/resources/se/yalar/grupp5/sakiladata/start-menu.fxml	(revision a660f83c7bb331f6f2bfe17d9d43de5959045821)
++++ b/src/main/resources/se/yalar/grupp5/sakiladata/start-menu.fxml	(date 1680785119239)
+@@ -1,14 +1,13 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+-<?import javafx.geometry.Insets?>
+-<?import javafx.scene.control.Button?>
+-<?import javafx.scene.control.Label?>
+-<?import javafx.scene.layout.AnchorPane?>
+-<?import javafx.scene.text.Font?>
++<?import javafx.geometry.*?>
++<?import javafx.scene.control.*?>
++<?import javafx.scene.layout.*?>
++<?import javafx.scene.text.*?>
+ 
+-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.yalar.grupp5.sakiladata.Controller">
++<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.yalar.grupp5.sakiladata.StartMenu">
+     <children>
+-        <Button fx:id="btnActor" defaultButton="true" layoutX="69.0" layoutY="73.0" mnemonicParsing="false" onAction="#actorSelected" prefHeight="52.0" prefWidth="87.0" text="Actor">
++        <Button fx:id="btnActor" defaultButton="true" layoutX="69.0" layoutY="73.0" mnemonicParsing="false" onAction="#actorSelected" prefHeight="52.0" prefWidth="87.0" text="Skådespelare">
+             <opaqueInsets>
+                 <Insets />
+             </opaqueInsets>
+@@ -16,78 +15,78 @@
+                 <Font size="11.0" />
+             </font>
+         </Button>
+-        <Button fx:id="btnAddress" defaultButton="true" layoutX="200.0" layoutY="73.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Address">
++        <Button fx:id="btnAddress" defaultButton="true" layoutX="200.0" layoutY="73.0" mnemonicParsing="false" onAction="#addressSelected" prefHeight="52.0" prefWidth="87.0" text="adress">
+             <font>
+                 <Font size="11.0" />
+             </font>
+         </Button>
+-        <Button fx:id="btnCategory" defaultButton="true" layoutX="331.0" layoutY="73.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Category">
++        <Button fx:id="btnCategory" defaultButton="true" layoutX="331.0" layoutY="73.0" mnemonicParsing="false" onAction="#categorySelected" prefHeight="52.0" prefWidth="87.0" text="Kategori">
+             <font>
+                 <Font size="11.0" />
+             </font>
+         </Button>
+-        <Button fx:id="btnCity" defaultButton="true" layoutX="456.0" layoutY="73.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="City">
++        <Button fx:id="btnCity" defaultButton="true" layoutX="456.0" layoutY="73.0" mnemonicParsing="false" onAction="#citySelected" prefHeight="52.0" prefWidth="87.0" text="Stad">
+             <font>
+                 <Font size="11.0" />
+             </font>
+         </Button>
+-        <Button fx:id="btnCountry" defaultButton="true" layoutX="69.0" layoutY="148.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Country">
++        <Button fx:id="btnCountry" defaultButton="true" layoutX="69.0" layoutY="148.0" mnemonicParsing="false" onAction="#countrySelected" prefHeight="52.0" prefWidth="87.0" text="Land">
+             <font>
+                 <Font size="11.0" />
+             </font>
+         </Button>
+-        <Button fx:id="btnCustomer" defaultButton="true" layoutX="200.0" layoutY="148.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Customer">
++        <Button fx:id="btnCustomer" defaultButton="true" layoutX="200.0" layoutY="148.0" mnemonicParsing="false" onAction="#customerSelected" prefHeight="52.0" prefWidth="87.0" text="Kunder">
+             <font>
+                 <Font size="11.0" />
+             </font>
+         </Button>
+-        <Button fx:id="btnFilm" defaultButton="true" layoutX="331.0" layoutY="148.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Film">
++        <Button fx:id="btnFilm" defaultButton="true" layoutX="331.0" layoutY="148.0" mnemonicParsing="false" onAction="#filmSelected" prefHeight="52.0" prefWidth="87.0" text="Film">
+             <font>
+                 <Font size="11.0" />
+             </font>
+         </Button>
+-        <Button fx:id="btnFilmActor" defaultButton="true" layoutX="456.0" layoutY="148.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Film_actor">
++        <Button fx:id="btnFilmActor" defaultButton="true" layoutX="456.0" layoutY="148.0" mnemonicParsing="false" onAction="#filmActorSelected" prefHeight="52.0" prefWidth="87.0" text="Film_skådespelare">
+             <font>
+-                <Font size="11.0" />
++                <Font size="9.0" />
+             </font>
+         </Button>
+-        <Button fx:id="btnFilmCategory" defaultButton="true" layoutX="69.0" layoutY="223.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Film_category">
++        <Button fx:id="btnFilmCategory" defaultButton="true" layoutX="69.0" layoutY="223.0" mnemonicParsing="false" onAction="#filmCategorySelected" prefHeight="52.0" prefWidth="87.0" text="Film_Kategori">
+             <font>
+                 <Font size="11.0" />
+             </font>
+         </Button>
+-        <Button fx:id="btnPayment" defaultButton="true" layoutX="69.0" layoutY="297.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Payment">
++        <Button fx:id="btnPayment" defaultButton="true" layoutX="69.0" layoutY="297.0" mnemonicParsing="false" onAction="#paymentSelected" prefHeight="52.0" prefWidth="87.0" text="Betalning">
+             <font>
+                 <Font size="11.0" />
+             </font>
+         </Button>
+-        <Button fx:id="btnFilmText" defaultButton="true" layoutX="200.0" layoutY="223.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Film_text">
++        <Button fx:id="btnFilmText" defaultButton="true" layoutX="200.0" layoutY="223.0" mnemonicParsing="false" onAction="#filmTextSelected" prefHeight="52.0" prefWidth="87.0" text="Film_text">
+             <font>
+                 <Font size="11.0" />
+             </font>
+         </Button>
+-        <Button fx:id="btnRental" defaultButton="true" layoutX="200.0" layoutY="297.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Rental">
++        <Button fx:id="btnRental" defaultButton="true" layoutX="200.0" layoutY="297.0" mnemonicParsing="false" onAction="#rentalSelected" prefHeight="52.0" prefWidth="87.0" text="Uthyrning">
+             <font>
+                 <Font size="11.0" />
+             </font>
+         </Button>
+-        <Button fx:id="btnInventory" defaultButton="true" layoutX="331.0" layoutY="223.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Inventory">
++        <Button fx:id="btnInventory" defaultButton="true" layoutX="331.0" layoutY="223.0" mnemonicParsing="false" onAction="#inventorySelected" prefHeight="52.0" prefWidth="87.0" text="Lager">
+             <font>
+                 <Font size="11.0" />
+             </font>
+         </Button>
+-        <Button fx:id="btnLanguage" defaultButton="true" layoutX="456.0" layoutY="223.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Language">
++        <Button fx:id="btnLanguage" defaultButton="true" layoutX="456.0" layoutY="223.0" mnemonicParsing="false" onAction="#languageSelected" prefHeight="52.0" prefWidth="87.0" text="Språk">
+             <font>
+                 <Font size="11.0" />
+             </font>
+         </Button>
+-        <Button fx:id="btnStaff" defaultButton="true" layoutX="331.0" layoutY="297.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Staff">
++        <Button fx:id="btnStaff" defaultButton="true" layoutX="331.0" layoutY="297.0" mnemonicParsing="false" onAction="#staffSelected" prefHeight="52.0" prefWidth="87.0" text="Personal">
+             <font>
+                 <Font size="11.0" />
+             </font>
+         </Button>
+-        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="257.0" layoutY="14.0" prefHeight="40.0" prefWidth="87.0" text="Select a table" textFill="#20d2ff" underline="true" />
+-        <Button fx:id="btnStore" defaultButton="true" layoutX="456.0" layoutY="297.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="Store">
++        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="257.0" layoutY="14.0" prefHeight="40.0" prefWidth="87.0" text="Välj tabell" textFill="#20d2ff" underline="true" />
++        <Button fx:id="btnStore" defaultButton="true" layoutX="456.0" layoutY="297.0" mnemonicParsing="false" onAction="#storeSelected" prefHeight="52.0" prefWidth="87.0" text="Butik">
+             <font>
+                 <Font size="11.0" />
+             </font>

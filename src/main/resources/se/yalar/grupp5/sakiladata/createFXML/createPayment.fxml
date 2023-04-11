@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.yalar.grupp5.sakiladata.controller.create.CreatePayment">
+   <children>
+      <Button fx:id="btnOk" layoutX="258.0" layoutY="305.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="85.0" text="Ok" />
+      <Label alignment="CENTER" layoutX="261.0" layoutY="14.0" prefHeight="25.0" prefWidth="78.0" text="Betalning" />
+      <Label layoutX="47.0" layoutY="97.0" prefHeight="17.0" prefWidth="91.0" text="Kund Id" />
+      <Label layoutX="47.0" layoutY="124.0" prefHeight="17.0" prefWidth="91.0" text="Personal Id" />
+      <Label layoutX="47.0" layoutY="151.0" prefHeight="17.0" prefWidth="91.0" text="Hyres Id" />
+      <Label layoutX="47.0" layoutY="181.0" prefHeight="17.0" prefWidth="91.0" text="Belopp" />
+      <Label layoutX="47.0" layoutY="209.0" prefHeight="17.0" prefWidth="91.0" text="Betalningsdatum" />
+      <Label layoutX="47.0" layoutY="234.0" prefHeight="17.0" prefWidth="91.0" text="Senast updaterat" />
+      <Label layoutX="47.0" layoutY="71.0" prefHeight="17.0" prefWidth="91.0" text="Betalnings Id" />
+      <TextField fx:id="tfPaymentId" layoutX="177.0" layoutY="67.0" prefHeight="25.0" prefWidth="365.0" promptText="Betalnings Id" />
+      <TextField fx:id="tfCustomerId" layoutX="177.0" layoutY="93.0" prefHeight="25.0" prefWidth="365.0" promptText="Kund Id" />
+      <TextField fx:id="tfStaffId" layoutX="177.0" layoutY="120.0" prefHeight="25.0" prefWidth="365.0" promptText="Personal Id" />
+      <TextField fx:id="tfRentalId" layoutX="177.0" layoutY="147.0" prefHeight="25.0" prefWidth="365.0" promptText="Hyres Id" />
+      <TextField fx:id="tfAmount" layoutX="177.0" layoutY="177.0" prefHeight="25.0" prefWidth="365.0" promptText="Belopp" />
+      <TextField fx:id="tfPaymentDate" layoutX="177.0" layoutY="205.0" prefHeight="25.0" prefWidth="365.0" promptText="Betalningsdatum" />
+      <TextField fx:id="tfLastUpdate" layoutX="177.0" layoutY="230.0" prefHeight="25.0" prefWidth="365.0" promptText="Senast updaterat" />
+   </children>
+</AnchorPane>

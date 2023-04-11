@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.yalar.grupp5.sakiladata.controller.create.CreateStaff">
+   <children>
+      <Button fx:id="btnOk" layoutX="256.0" layoutY="309.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="88.0" text="Ok" />
+      <Label alignment="CENTER" layoutX="256.0" layoutY="14.0" prefHeight="25.0" prefWidth="88.0" text="Personal" />
+      <Label layoutX="25.0" layoutY="56.0" prefHeight="17.0" prefWidth="81.0" text="Personal Id" />
+      <Label layoutX="25.0" layoutY="79.0" prefHeight="17.0" prefWidth="81.0" text="Förnamn" />
+      <Label layoutX="25.0" layoutY="102.0" prefHeight="17.0" prefWidth="81.0" text="Efternamn" />
+      <Label layoutX="25.0" layoutY="127.0" prefHeight="17.0" prefWidth="81.0" text="Adress Id" />
+      <Label layoutX="25.0" layoutY="151.0" prefHeight="17.0" prefWidth="81.0" text="E-mail" />
+      <Label layoutX="25.0" layoutY="176.0" prefHeight="17.0" prefWidth="81.0" text="Butiks Id" />
+      <Label layoutX="25.0" layoutY="202.0" prefHeight="17.0" prefWidth="81.0" text="Användarnamn" />
+      <Label layoutX="25.0" layoutY="227.0" prefHeight="17.0" prefWidth="81.0" text="Lösenord" />
+      <Label layoutX="25.0" layoutY="252.0" prefHeight="17.0" prefWidth="96.0" text="Senast updaterat" />
+      <TextField fx:id="tfStaffId" layoutX="125.0" layoutY="52.0" prefHeight="25.0" prefWidth="436.0" promptText="Personal Id" />
+      <TextField fx:id="tfFirstName" layoutX="125.0" layoutY="75.0" prefHeight="25.0" prefWidth="436.0" promptText="Förnamn" />
+      <TextField fx:id="tfLastName" layoutX="125.0" layoutY="98.0" prefHeight="25.0" prefWidth="436.0" promptText="Efternamn" />
+      <TextField fx:id="tfAddressId" layoutX="125.0" layoutY="123.0" prefHeight="25.0" prefWidth="436.0" promptText="Adress Id" />
+      <TextField fx:id="tfEmail" layoutX="125.0" layoutY="147.0" prefHeight="25.0" prefWidth="436.0" promptText="E-mail" />
+      <TextField fx:id="tfStoreId" layoutX="125.0" layoutY="172.0" prefHeight="25.0" prefWidth="436.0" promptText="Butiks Id" />
+      <TextField fx:id="tfUsername" layoutX="125.0" layoutY="198.0" prefHeight="25.0" prefWidth="436.0" promptText="Användarnamn" />
+      <TextField fx:id="tfPassword" layoutX="125.0" layoutY="223.0" prefHeight="25.0" prefWidth="436.0" promptText="Lösenord" />
+      <TextField fx:id="tfLastUpdate" layoutX="125.0" layoutY="248.0" prefHeight="25.0" prefWidth="436.0" promptText="Senast updaterat" />
+      <Label layoutX="25.0" layoutY="277.0" prefHeight="17.0" prefWidth="61.0" text="Aktiv" />
+      <TextField fx:id="tfActive" layoutX="125.0" layoutY="273.0" prefHeight="25.0" prefWidth="436.0" promptText="Skriv 1 om personal är aktiv" />
+   </children>
+</AnchorPane>
