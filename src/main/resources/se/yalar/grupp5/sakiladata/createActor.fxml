@@ -10,10 +10,8 @@
       <Label alignment="CENTER" layoutX="238.0" layoutY="14.0" prefHeight="42.0" prefWidth="124.0" text="Skådespelare" textFill="#3b58f5" />
       <Label fx:id="lblLastName" layoutX="33.0" layoutY="196.0" prefHeight="17.0" prefWidth="96.0" text="Efternamn" />
       <TextField fx:id="tfLastName" layoutX="156.0" layoutY="192.0" prefHeight="25.0" prefWidth="345.0" promptText="Efternamn" />
-      <Button fx:id="btnOk" layoutX="238.0" layoutY="311.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="124.0" text="Ok" />
+      <Button fx:id="btnOk" layoutX="238.0" layoutY="311.0" mnemonicParsing="false" onAction="#create" prefHeight="57.0" prefWidth="124.0" text="Ok" />
       <Label layoutX="33.0" layoutY="82.0" text="Skådespelarens Id" />
-      <Label layoutX="33.0" layoutY="249.0" prefHeight="17.0" prefWidth="96.0" text="Senast updaterat" />
       <TextField fx:id="tfActorId" layoutX="156.0" layoutY="78.0" prefHeight="25.0" prefWidth="345.0" promptText="Skådespelarens Id" />
-      <TextField fx:id="tfLastUpdate" layoutX="156.0" layoutY="245.0" prefHeight="25.0" prefWidth="345.0" promptText="Senast updaterat" />
    </children>
 </AnchorPane>

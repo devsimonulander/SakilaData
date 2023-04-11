@@ -41,10 +41,14 @@ public class Film {
     @Column(name = "replacement_cost")
     private double replacementCost;
 
+    @Column(name = "rating")
+    private Rating rating;
 
-    //rätta till den här attributen då den är Set i mysql
     @Column(name = "special_features")
     private Set specialFeatures;
+
+    @Column(name="last_update")
+    private String lastUpdate;
 
     public Film() {
     }
@@ -129,12 +133,28 @@ public class Film {
         this.replacementCost = replacementCost;
     }
 
+    public Rating getRating() {
+        return rating;
+    }
+
+    public void setRating(Rating rating) {
+        this.rating = rating;
+    }
+
     public Set getSpecialFeatures() {
         return specialFeatures;
     }
 
     public void setSpecialFeatures(Set specialFeatures) {
         this.specialFeatures = specialFeatures;
+    }
+
+    public String getLastUpdate() {
+        return lastUpdate;
+    }
+
+    public void setLastUpdate(String lastUpdate) {
+        this.lastUpdate = lastUpdate;
     }
 
     @Override
@@ -150,14 +170,15 @@ public class Film {
                 ", rentalRate=" + rentalRate +
                 ", length=" + length +
                 ", replacementCost=" + replacementCost +
+                ", rating=" + rating +
                 ", specialFeatures=" + specialFeatures +
                 '}';
     }
     enum Rating {
-    G,
-    PG,
-    PG13,
-    R,
-    NC17
-}
+        G,
+        PG,
+        PG13,
+        R,
+        NC17
+    }
 }

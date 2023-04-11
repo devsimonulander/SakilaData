@@ -13,7 +13,10 @@ public class Actor {
     private String firstName;
 
     @Column(name = "last_name")
-    private int lastName;
+    private String lastName;
+
+    @Column(name="last_update")
+    private String lastUpdate;
 
     public Actor() {
     }
@@ -34,12 +37,20 @@ public class Actor {
         this.firstName = firstName;
     }
 
-    public int getLastName() {
+    public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(int lastName) {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getLastUpdate() {
+        return lastUpdate;
+    }
+
+    public void setLastUpdate(String lastUpdate) {
+        this.lastUpdate = lastUpdate;
     }
 
     @Override

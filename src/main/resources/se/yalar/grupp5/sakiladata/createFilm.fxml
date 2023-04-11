@@ -19,13 +19,11 @@
       <Label layoutX="44.0" layoutY="254.0" prefHeight="25.0" prefWidth="78.0" text="Längd" />
       <Label layoutX="44.0" layoutY="304.0" prefHeight="25.0" prefWidth="78.0" text="Betyg" />
       <Label layoutX="44.0" layoutY="329.0" prefHeight="25.0" prefWidth="112.0" text="Specialfunktioner" />
-      <Label layoutX="44.0" layoutY="354.0" prefHeight="25.0" prefWidth="105.0" text="Senast updaterat" />
       <TextField fx:id="tfRentalRate" layoutX="169.0" layoutY="229.0" prefHeight="25.0" prefWidth="371.0" promptText="Hyr kostnad" />
       <TextField fx:id="tfReplacementCost" layoutX="169.0" layoutY="279.0" prefHeight="25.0" prefWidth="371.0" promptText="Ersättningskostnad" />
       <TextField fx:id="tfLength" layoutX="169.0" layoutY="254.0" prefHeight="25.0" prefWidth="371.0" promptText="Längd" />
       <TextField fx:id="tfRating" layoutX="169.0" layoutY="304.0" prefHeight="25.0" prefWidth="371.0" promptText="Betyg" />
       <TextField fx:id="tfSpecialFeatures" layoutX="169.0" layoutY="329.0" prefHeight="25.0" prefWidth="371.0" promptText="Specialfunktioner" />
-      <TextField fx:id="tfLastUpdate" layoutX="169.0" layoutY="353.0" prefHeight="25.0" prefWidth="371.0" promptText="Senast updaterat" />
       <Button fx:id="btnOk" layoutX="254.0" layoutY="420.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="93.0" text="OK" />
       <Label layoutX="44.0" layoutY="52.0" prefHeight="25.0" prefWidth="78.0" text="Film Id" />
       <TextField fx:id="tfFilmId" layoutX="169.0" layoutY="52.0" prefHeight="25.0" prefWidth="371.0" promptText="Film Id" />

@@ -20,6 +20,9 @@ public class Staff {
     @JoinColumn(name = "address_id")
     private Address address;
 
+    @Column(name="picture")
+    private byte[] picture;
+
     @Column(name = "email")
     private String email;
 
@@ -27,7 +30,6 @@ public class Staff {
     @JoinColumn(name = "store_id")
     private Store store;
 
-    //se så att boolean inte ska vara int?!
     @Column(name = "active")
     private boolean isActive;
 
@@ -36,6 +38,9 @@ public class Staff {
 
     @Column(name = "password")
     private String password;
+
+    @Column(name="last_update")
+    private String lastUpdate;
 
     public Staff(){
 
@@ -111,6 +116,22 @@ public class Staff {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public byte[] getPicture() {
+        return picture;
+    }
+
+    public void setPicture(byte[] picture) {
+        this.picture = picture;
+    }
+
+    public String getLastUpdate() {
+        return lastUpdate;
+    }
+
+    public void setLastUpdate(String lastUpdate) {
+        this.lastUpdate = lastUpdate;
     }
 
     @Override

@@ -6,8 +6,5 @@ import javafx.scene.control.TextField;
 
 public class CreateRental {
     @FXML
-    private Button btnOk;
-
-    @FXML
-    private TextField tfRentalId, tfRentalDate, tfInventoryId, tfCustomerId, tfReturnDate, tfStaffId, tfLastUpdate;
+    private TextField tfRentalId, tfRentalDate, tfInventoryId, tfCustomerId, tfReturnDate, tfStaffId;
 }

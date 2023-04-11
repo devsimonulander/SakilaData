@@ -5,10 +5,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
 public class CreateFilmCategory {
-    @FXML
-    private Button btnOk;
 
     @FXML
-    private TextField tfCategoryId, tfFilmId, tfLastUpdate;
+    private TextField tfCategoryId, tfFilmId;
 
 }

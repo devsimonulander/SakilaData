@@ -18,6 +18,9 @@ public class City {
     @JoinColumn(name = "country_id")
     private Country country;
 
+    @Column(name="last_update")
+    private String lastUpdate;
+
     public City(){
 
     }
@@ -44,6 +47,14 @@ public class City {
 
     public void setCountry(Country country) {
         this.country = country;
+    }
+
+    public String getLastUpdate() {
+        return lastUpdate;
+    }
+
+    public void setLastUpdate(String lastUpdate) {
+        this.lastUpdate = lastUpdate;
     }
 
     @Override

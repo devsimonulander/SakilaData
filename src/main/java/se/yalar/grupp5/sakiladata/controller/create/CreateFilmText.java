@@ -6,8 +6,5 @@ import javafx.scene.control.TextField;
 
 public class CreateFilmText {
     @FXML
-    private Button btnOk;
-
-    @FXML
     private TextField tfFilmId, tfTitle, tfDeskription;
 }

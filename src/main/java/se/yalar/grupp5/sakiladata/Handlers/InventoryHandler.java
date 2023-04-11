@@ -1,90 +1,83 @@
-
 package se.yalar.grupp5.sakiladata.Handlers;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import se.yalar.grupp5.sakiladata.entities.Actor;
+import se.yalar.grupp5.sakiladata.entities.Inventory;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
-public class ActorHandler {
+public class InventoryHandler {
 
-    public List<Actor> getTable(){
-        List<Actor> actorList = null;
+    public List<Inventory> getTable(){
+        List<Inventory> inventoryList = null;
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
         session.beginTransaction();
 
-        try {
-            CriteriaBuilder builder = session.getCriteriaBuilder();
-            CriteriaQuery<Actor> criteria = builder.createQuery(Actor.class);
-            Root<Actor> root = criteria.from(Actor.class);
-            criteria.select(root);
-            actorList = session.createQuery(criteria).getResultList();
-        } catch (HibernateException e) {
+        try{
+            CriteriaBuilder criteriaBuilder = session.getCriteriaBuilder();
+            CriteriaQuery<Inventory> criteriaQuery = criteriaBuilder.createQuery(Inventory.class);
+            Root<Inventory> root = criteriaQuery.from(Inventory.class);
+            criteriaQuery.select(root);
+            inventoryList = session.createQuery(criteriaQuery).getResultList();
+        } catch (HibernateException e){
             e.printStackTrace();
         } finally {
             session.close();
             sessionFactory.close();
         }
-        return actorList;
+        return inventoryList;
     }
-    public int insert(Actor newActor) {
 
+    public Inventory getInventoryById(int id){
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
         session.beginTransaction();
-        session.persist(newActor);
+        Inventory inventory = session.get(Inventory.class, id);
+        session.close();
+        return inventory;
+    }
+
+    public void insert(Inventory inventory){
+        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+        Session session = sessionFactory.openSession();
+        session.beginTransaction();
+        session.persist(inventory);
 
         session.getTransaction().commit();
         session.close();
-
-
-        return newActor.getId();
     }
 
-    public int update(Actor updateActor) {
 
+    public void update(Inventory newInventory){
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
         session.beginTransaction();
-        Actor actor = session.get(Actor.class, updateActor.getId());
-        actor.setFirstName(updateActor.getFirstName());
-        actor.setLastName(updateActor.getLastName());
-        session.update(actor);
 
+        Inventory oldInventory = session.get(Inventory.class, newInventory.getId());
+        oldInventory.setFilmList(newInventory.getFilmList());
+        oldInventory.setStoreList(newInventory.getStoreList());
+
+        session.update(oldInventory);
         session.getTransaction().commit();
         session.close();
-        return 0;
     }
 
-    public int delete(int id) {
-
+    public void delete(int id){
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
         session.beginTransaction();
 
-        Actor actor = session.get(Actor.class, id);
+        Inventory inventory = session.get(Inventory.class, id);
 
-        session.delete(actor);
-
+        session.delete(inventory);
         session.getTransaction().commit();
         session.close();
-        return 0;
-    }
-
-    public Actor getById(int id){
-        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
-        Session session = sessionFactory.openSession();
-        session.beginTransaction();
-        Actor actor = session.get(Actor.class, id);
-        session.close();
-        return actor;
+        sessionFactory.close();
     }
 }
-

@@ -6,7 +6,5 @@ import javafx.scene.control.TextField;
 
 public class CreateCustomer {
     @FXML
-    private Button btnOk;
-    @FXML
     private TextField tfFirstName, tfLastName, tfEmail, tfAktiv, tfCustomerId, tfStoreId, tfAddressId;
 }

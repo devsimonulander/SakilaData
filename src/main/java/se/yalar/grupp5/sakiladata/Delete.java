@@ -24,7 +24,7 @@ public class Delete {
         try {
             switch (info){
                 case "Actor":
-
+                    //Delete by id
                     break;
                 case "Address":
 
