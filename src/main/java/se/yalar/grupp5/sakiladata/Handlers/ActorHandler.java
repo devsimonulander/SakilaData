@@ -37,13 +37,13 @@ public class ActorHandler {
     public int insert(Actor newActor) {
 
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
-        try (Session session = sessionFactory.openSession()) {
-            session.beginTransaction();
-            session.persist(newActor);
+        Session session = sessionFactory.openSession();
+        session.beginTransaction();
+        session.persist(newActor);
 
-            session.getTransaction().commit();
-            session.close();
-        }
+        session.getTransaction().commit();
+        session.close();
+
 
         return newActor.getId();
     }

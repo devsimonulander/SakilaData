@@ -5,6 +5,7 @@ module com.example.sakiladata {
     requires org.hibernate.orm.core;
     requires java.persistence;
     requires org.locationtech.jts;
+    requires java.naming;
 
 
     opens se.yalar.grupp5.sakiladata to javafx.fxml;
@@ -13,4 +14,5 @@ module com.example.sakiladata {
     opens se.yalar.grupp5.sakiladata.controller.read to javafx.fxml;
     exports se.yalar.grupp5.sakiladata.controller.create;
     opens se.yalar.grupp5.sakiladata.controller.create to javafx.fxml;
+
 }

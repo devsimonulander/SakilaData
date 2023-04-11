@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="750.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.yalar.grupp5.sakiladata.controller.read.ReadTable">
+<AnchorPane prefHeight="750.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.yalar.grupp5.sakiladata.controller.read.ReadTable">
    <children>
       <ScrollPane prefHeight="750" prefWidth="750">
          <content>
-            <TableView prefHeight="750" prefWidth="750">
+            <TableView prefHeight="750" prefWidth="748.0">
               <columns>
-                <TableColumn prefWidth="75.0" text="C1" />
-                <TableColumn prefWidth="75.0" text="C2" />
-                  <TableColumn prefWidth="75.0" text="C3" />
-                  <TableColumn prefWidth="75.0" text="C4" />
-                  <TableColumn prefWidth="75.0" text="C5" />
-                  <TableColumn prefWidth="75.0" text="C6" />
-                  <TableColumn prefWidth="75.0" text="C7" />
+                <TableColumn fx:id="colC1" prefWidth="104.0" text="C1" />
+                <TableColumn fx:id="colC2" prefWidth="94.0" text="C2" />
+                  <TableColumn fx:id="colC3" prefWidth="102.0" text="C3" />
+                  <TableColumn fx:id="colC4" prefWidth="121.0" text="C4" />
+                  <TableColumn fx:id="colC5" prefWidth="109.0" text="C5" />
+                  <TableColumn fx:id="colC6" prefWidth="102.0" text="C6" />
+                  <TableColumn fx:id="colC7" prefWidth="102.0" text="C7" />
               </columns>
             </TableView>
          </content>

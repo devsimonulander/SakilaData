@@ -13,13 +13,11 @@
       <Label layoutX="57.0" layoutY="171.0" prefHeight="17.0" prefWidth="113.0" text="Kund Id" />
       <Label layoutX="57.0" layoutY="200.0" prefHeight="17.0" prefWidth="113.0" text="Återlämningsdatum" />
       <Label layoutX="57.0" layoutY="230.0" prefHeight="17.0" prefWidth="113.0" text="Personal Id" />
-      <Label layoutX="57.0" layoutY="264.0" prefHeight="17.0" prefWidth="113.0" text="Last update" />
       <TextField fx:id="tfRentalId" layoutX="193.0" layoutY="67.0" prefHeight="25.0" prefWidth="350.0" promptText="Uthyrnings Id" />
       <TextField fx:id="tfRentalDate" layoutX="193.0" layoutY="103.0" prefHeight="25.0" prefWidth="350.0" promptText="Uthyrningsdatum" />
       <TextField fx:id="tfInventroyId" layoutX="193.0" layoutY="136.0" prefHeight="25.0" prefWidth="350.0" promptText="Lager Id" />
       <TextField fx:id="tfCustomerId" layoutX="193.0" layoutY="167.0" prefHeight="25.0" prefWidth="350.0" promptText="Kund Id" />
       <TextField fx:id="tfReturnDate" layoutX="193.0" layoutY="196.0" prefHeight="25.0" prefWidth="350.0" promptText="Återlämningsdatum" />
       <TextField fx:id="tfStaffId" layoutX="193.0" layoutY="226.0" prefHeight="25.0" prefWidth="350.0" promptText="Personal Id" />
-      <TextField fx:id="tfLastUpdate" layoutX="193.0" layoutY="260.0" prefHeight="25.0" prefWidth="350.0" promptText="Last update" />
    </children>
 </AnchorPane>

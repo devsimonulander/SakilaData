@@ -10,7 +10,7 @@ public class Payment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int payment_id;
+    private int id;
 
     @Column(name="customer_id")
     private int customerId;
@@ -33,12 +33,12 @@ public class Payment {
     public Payment() {
     }
 
-    public int getPayment_id() {
-        return payment_id;
+    public int getId() {
+        return id;
     }
 
-    public void setPayment_id(int payment_id) {
-        this.payment_id = payment_id;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getCustomerId() {
@@ -92,7 +92,7 @@ public class Payment {
     @Override
     public String toString() {
         return "Payment{" +
-                "payment_id=" + payment_id +
+                "payment_id=" + id +
                 ", customerId=" + customerId +
                 ", staffId=" + staffId +
                 ", rentalId=" + rentalId +

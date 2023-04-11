@@ -6,9 +6,9 @@ import javafx.scene.control.TextField;
 
 public class CreateAddress {
     @FXML
-    private Button btnOk;
-    @FXML
-    private TextField tfAddressId, tfAddress, tfAddress2, tfDistrict, tfCityId, tfPhone, tfPostalCode, tfLatUpdate;
+    private TextField tfAddressId, tfAddress, tfAddress2, tfDistrict, tfCityId, tfPhone, tfPostalCode;
+
+
 
 
 }

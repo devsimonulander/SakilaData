@@ -4,9 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cd5c7c4-eaa3-498d-938a-97b6b9d3ec47" name="Changes" comment="">
+    <list default="true" id="e68e1e8f-885a-4bd8-90b7-5b45bdfac2e2" name="Changes" comment="Crud controllers">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/AddressHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/AddressHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Delete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/ActorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/ActorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateAddress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateCity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateCity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateFilm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateFilm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateFilmActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateFilmActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateFilmCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateFilmCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateFilmText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateFilmText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateInventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreatePayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreatePayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateRental.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateRental.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateStaff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateStaff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/read/Read.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/read/Read.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/read/ReadTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/read/ReadTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/entities/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/entities/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createActor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createActor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createAddress.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createAddress.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createCity.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createCity.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createCustomer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createCustomer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createFilm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFilm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createFilmActor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFilmActor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createFilmCategory.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFilmCategory.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createFilmText.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFilmText.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createInventory.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createInventory.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createPayment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createPayment.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createRental.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createRental.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createStaff.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createStaff.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createStore.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createStore.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/readTable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/readTable.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +68,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2NllHYEgWIYtVT0CZoPTjas4bHC" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -45,16 +81,20 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/allee/Intelij-projekt/Gruppuppgift Software development process/src/main/resources",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/faiz-/IdeaProjects/WigellConcerts",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\faiz-\IdeaProjects\SakilaData\src\main\resources\se\yalar\grupp5\sakiladata" />
+      <recent name="C:\Users\faiz-\IdeaProjects\SakilaData\src\main\resources\se\yalar\grupp5\sakiladata\hibernate" />
       <recent name="C:\Users\allee\Intelij-projekt\Gruppuppgift Software development process\src\main\resources" />
       <recent name="C:\Users\allee\Intelij-projekt\Gruppuppgift Software development process\src\main\java" />
     </key>
@@ -73,5 +113,20 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -6,8 +6,5 @@ import javafx.scene.control.TextField;
 
 public class CreateInventory {
     @FXML
-    private Button btnOk;
-
-    @FXML
-    private TextField tfInventoryId, tfFilmId, tfStoreId, tfLastUpdate;
+    private TextField tfInventoryId, tfFilmId, tfStoreId;
 }
