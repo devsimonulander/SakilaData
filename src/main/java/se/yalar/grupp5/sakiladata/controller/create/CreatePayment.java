@@ -6,8 +6,5 @@ import javafx.scene.control.TextField;
 
 public class CreatePayment {
     @FXML
-    private Button btnOk;
-
-    @FXML
-    private TextField tfPaymentId, tfCustomerId, tfStaffId, tfRentalId, tfAmount, tfPaymentDate, tfLastUpdate;
+    private TextField tfPaymentId, tfCustomerId, tfStaffId, tfRentalId, tfAmount, tfPaymentDate;
 }

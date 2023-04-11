@@ -1,0 +1,460 @@
+Index: src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateActor.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package se.yalar.grupp5.sakiladata.controller.create;\r\n\r\nimport javafx.fxml.FXML;\r\nimport javafx.scene.control.Button;\r\nimport javafx.scene.control.TextField;\r\n\r\npublic class CreateActor {\r\n\r\n    @FXML\r\n    private Button btnOk;\r\n    @FXML\r\n    private TextField tfActorId, tfFirstName, tfLastName, tfLastUpdate;\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateActor.java b/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateActor.java
+--- a/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateActor.java	(revision 713f74446eee8b1b9fd00f94e63038cc4b19af2c)
++++ b/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateActor.java	(date 1681204502666)
+@@ -3,6 +3,8 @@
+ import javafx.fxml.FXML;
+ import javafx.scene.control.Button;
+ import javafx.scene.control.TextField;
++import se.yalar.grupp5.sakiladata.Handlers.ActorHandler;
++import se.yalar.grupp5.sakiladata.entities.Actor;
+ 
+ public class CreateActor {
+ 
+@@ -11,5 +13,15 @@
+     @FXML
+     private TextField tfActorId, tfFirstName, tfLastName, tfLastUpdate;
+ 
++    @FXML
++    void create(){
++        Actor actor = new Actor();
++        actor.setId(Integer.parseInt(tfActorId.getText()));
++        actor.setFirstName(tfFirstName.getText());
++        actor.setLastName(tfLastName.getText());
++        ActorHandler actorHandler = new ActorHandler();
++        actorHandler.insert(actor);
++    }
++
+ 
+ }
+Index: src/main/java/module-info.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>module com.example.sakiladata {\r\n    requires javafx.controls;\r\n    requires javafx.fxml;\r\n    requires jakarta.persistence;\r\n    requires org.hibernate.orm.core;\r\n    requires java.persistence;\r\n    requires org.locationtech.jts;\r\n\r\n\r\n    opens se.yalar.grupp5.sakiladata to javafx.fxml;\r\n    exports se.yalar.grupp5.sakiladata;\r\n    exports se.yalar.grupp5.sakiladata.controller.read;\r\n    opens se.yalar.grupp5.sakiladata.controller.read to javafx.fxml;\r\n    exports se.yalar.grupp5.sakiladata.controller.create;\r\n    opens se.yalar.grupp5.sakiladata.controller.create to javafx.fxml;\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/module-info.java b/src/main/java/module-info.java
+--- a/src/main/java/module-info.java	(revision 713f74446eee8b1b9fd00f94e63038cc4b19af2c)
++++ b/src/main/java/module-info.java	(date 1681204439711)
+@@ -5,6 +5,7 @@
+     requires org.hibernate.orm.core;
+     requires java.persistence;
+     requires org.locationtech.jts;
++    requires java.naming;
+ 
+ 
+     opens se.yalar.grupp5.sakiladata to javafx.fxml;
+@@ -13,4 +14,5 @@
+     opens se.yalar.grupp5.sakiladata.controller.read to javafx.fxml;
+     exports se.yalar.grupp5.sakiladata.controller.create;
+     opens se.yalar.grupp5.sakiladata.controller.create to javafx.fxml;
++
+ }
+\ No newline at end of file
+Index: src/main/java/se/yalar/grupp5/sakiladata/controller/read/Read.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package se.yalar.grupp5.sakiladata.controller.read;\r\n\r\nimport javafx.event.ActionEvent;\r\nimport javafx.fxml.FXML;\r\nimport javafx.fxml.FXMLLoader;\r\nimport javafx.scene.Parent;\r\nimport javafx.scene.Scene;\r\nimport javafx.scene.control.Button;\r\nimport javafx.scene.control.TextField;\r\nimport javafx.stage.Stage;\r\n\r\nimport java.io.IOException;\r\n\r\npublic class Read {\r\n    @FXML\r\n    private Button btnOk, btnShowTable;\r\n    @FXML\r\n    private TextField tfId;\r\n\r\n    @FXML\r\n    void showTable(ActionEvent event) throws IOException {\r\n        Parent rootActor = FXMLLoader.load(getClass().getResource(\"readTable.fxml\"));\r\n        Stage windowActor = (Stage) btnShowTable.getScene().getWindow();\r\n        windowActor.setScene(new Scene(rootActor, 750, 750));\r\n    }\r\n    @FXML\r\n    void getId(ActionEvent event) throws IOException {\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/se/yalar/grupp5/sakiladata/controller/read/Read.java b/src/main/java/se/yalar/grupp5/sakiladata/controller/read/Read.java
+--- a/src/main/java/se/yalar/grupp5/sakiladata/controller/read/Read.java	(revision 713f74446eee8b1b9fd00f94e63038cc4b19af2c)
++++ b/src/main/java/se/yalar/grupp5/sakiladata/controller/read/Read.java	(date 1681203276436)
+@@ -8,6 +8,7 @@
+ import javafx.scene.control.Button;
+ import javafx.scene.control.TextField;
+ import javafx.stage.Stage;
++import se.yalar.grupp5.sakiladata.StartMenu;
+ 
+ import java.io.IOException;
+ 
+@@ -25,6 +26,51 @@
+     }
+     @FXML
+     void getId(ActionEvent event) throws IOException {
++        String btninfo = StartMenu.lastBtn;
++        try {
++            switch (btninfo){
++                case "Actor":
++                    //Get by actor_id
++                    break;
++                case "Address":
++
++                    break;
++                case "City":
++
++                    break;
++                case "Customer":
++
++                    break;
++                case "Film":
++
++                    break;
++                case "FilmActor":
+ 
++                    break;
++                case "FilmCategory":
++
++                    break;
++                case "FilmText":
++
++                    break;
++                case "Inventory":
++
++                    break;
++                case "Payment":
++
++                    break;
++                case "Rental":
++
++                    break;
++                case "Staff":
++
++                    break;
++                case "Store":
++
++                    break;
++            }
++        } catch (Exception e) {
++            e.printStackTrace();
++        }
+     }
+ }
+Index: src/main/java/se/yalar/grupp5/sakiladata/Delete.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package se.yalar.grupp5.sakiladata;\r\n\r\nimport javafx.event.ActionEvent;\r\nimport javafx.fxml.FXML;\r\nimport javafx.fxml.FXMLLoader;\r\nimport javafx.scene.Parent;\r\nimport javafx.scene.Scene;\r\nimport javafx.scene.control.Button;\r\nimport javafx.scene.control.TextField;\r\nimport javafx.stage.Stage;\r\nimport se.yalar.grupp5.sakiladata.entities.Actor;\r\n\r\nimport java.io.IOException;\r\n\r\npublic class Delete {\r\n    Actor Actor = new Actor();\r\n    @FXML\r\n    private Button btnOk;\r\n    @FXML\r\n    private TextField tfId;\r\n    @FXML\r\n    void delete(ActionEvent event) throws IOException {\r\n        String info = StartMenu.lastBtn;\r\n        try {\r\n            switch (info){\r\n                case \"Actor\":\r\n\r\n                    break;\r\n                case \"Address\":\r\n\r\n                    break;\r\n                case \"City\":\r\n\r\n                    break;\r\n                case \"Customer\":\r\n\r\n                    break;\r\n                case \"Film\":\r\n\r\n                    break;\r\n                case \"FilmActor\":\r\n\r\n                    break;\r\n                case \"FilmCategory\":\r\n\r\n                    break;\r\n                case \"FilmText\":\r\n\r\n                    break;\r\n                case \"Inventory\":\r\n\r\n                    break;\r\n                case \"Payment\":\r\n\r\n                    break;\r\n                case \"Rental\":\r\n\r\n                    break;\r\n                case \"Staff\":\r\n\r\n                    break;\r\n                case \"Store\":\r\n\r\n                    break;\r\n            }\r\n        } catch (Exception e) {\r\n            e.printStackTrace();\r\n        }\r\n\r\n\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/se/yalar/grupp5/sakiladata/Delete.java b/src/main/java/se/yalar/grupp5/sakiladata/Delete.java
+--- a/src/main/java/se/yalar/grupp5/sakiladata/Delete.java	(revision 713f74446eee8b1b9fd00f94e63038cc4b19af2c)
++++ b/src/main/java/se/yalar/grupp5/sakiladata/Delete.java	(date 1681203276443)
+@@ -24,7 +24,7 @@
+         try {
+             switch (info){
+                 case "Actor":
+-
++                    //Delete by id
+                     break;
+                 case "Address":
+ 
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"9cd5c7c4-eaa3-498d-938a-97b6b9d3ec47\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/AddressHandler.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/AddressHandler.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Pull.Settings\">\r\n    <option name=\"OPTIONS\">\r\n      <set>\r\n        <option value=\"REBASE\" />\r\n      </set>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2NllHYEgWIYtVT0CZoPTjas4bHC\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"last_opened_file_path\": \"C:/Users/allee/Intelij-projekt/Gruppuppgift Software development process/src/main/resources\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\allee\\Intelij-projekt\\Gruppuppgift Software development process\\src\\main\\resources\" />\r\n      <recent name=\"C:\\Users\\allee\\Intelij-projekt\\Gruppuppgift Software development process\\src\\main\\java\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"9cd5c7c4-eaa3-498d-938a-97b6b9d3ec47\" name=\"Changes\" comment=\"\" />\r\n      <created>1680246464444</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1680246464444</updated>\r\n      <workItem from=\"1680246465497\" duration=\"1233000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 713f74446eee8b1b9fd00f94e63038cc4b19af2c)
++++ b/.idea/workspace.xml	(date 1681204502721)
+@@ -4,9 +4,30 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="9cd5c7c4-eaa3-498d-938a-97b6b9d3ec47" name="Changes" comment="">
++    <list default="true" id="e68e1e8f-885a-4bd8-90b7-5b45bdfac2e2" name="Changes" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/AddressHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/AddressHandler.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Delete.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateActor.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateAddress.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateFilm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateFilm.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/read/Read.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/read/Read.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/read/ReadTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/read/ReadTable.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createActor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createActor.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createAddress.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createAddress.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createCity.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createCity.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createCustomer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createCustomer.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createFilm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFilm.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createFilmActor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFilmActor.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createFilmCategory.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFilmCategory.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createFilmText.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFilmText.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createInventory.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createInventory.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createPayment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createPayment.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createRental.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createRental.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createStaff.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createStaff.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createStore.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createStore.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/readTable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/readTable.fxml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -34,7 +55,9 @@
+     <option name="stateVersion" value="1" />
+   </component>
+   <component name="ProjectId" id="2NllHYEgWIYtVT0CZoPTjas4bHC" />
+-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
++    <ConfirmationsSetting value="1" id="Add" />
++  </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+@@ -45,6 +68,7 @@
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+     "WebServerToolWindowFactoryState": "false",
++    "git-widget-placeholder": "main",
+     "last_opened_file_path": "C:/Users/allee/Intelij-projekt/Gruppuppgift Software development process/src/main/resources",
+     "node.js.detected.package.eslint": "true",
+     "node.js.detected.package.tslint": "true",
+Index: src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateFilm.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package se.yalar.grupp5.sakiladata.controller.create;\r\n\r\nimport javafx.fxml.FXML;\r\nimport javafx.scene.control.Button;\r\nimport javafx.scene.control.TextField;\r\n\r\npublic class CreateFilm {\r\n    @FXML\r\n    private Button btnOk;\r\n    @FXML\r\n    private TextField tfFilmId, tfTitle, tfDescription, tfReleaseYear, tfLanguageId, tfOriginalLanguageId, tfRentalDuration, tfRentalRate, tfLength,\r\n            tfReplacementCost, tfRating, tfSpecialFeatures, tfLastUpdate;\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateFilm.java b/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateFilm.java
+--- a/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateFilm.java	(revision 713f74446eee8b1b9fd00f94e63038cc4b19af2c)
++++ b/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateFilm.java	(date 1681204064073)
+@@ -3,6 +3,8 @@
+ import javafx.fxml.FXML;
+ import javafx.scene.control.Button;
+ import javafx.scene.control.TextField;
++import se.yalar.grupp5.sakiladata.Handlers.FilmHandler;
++import se.yalar.grupp5.sakiladata.entities.Film;
+ 
+ public class CreateFilm {
+     @FXML
+@@ -10,4 +12,12 @@
+     @FXML
+     private TextField tfFilmId, tfTitle, tfDescription, tfReleaseYear, tfLanguageId, tfOriginalLanguageId, tfRentalDuration, tfRentalRate, tfLength,
+             tfReplacementCost, tfRating, tfSpecialFeatures, tfLastUpdate;
++
++    @FXML
++    public void create(){
++        Film film = new Film();
++        film.setId(Integer.parseInt(tfFilmId.getText()));
++        FilmHandler filmHandler = new FilmHandler();
++        filmHandler.insert(film);
++    }
+ }
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"MavenProjectsManager\">\r\n    <option name=\"originalFiles\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/pom.xml\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_11\" default=\"true\" project-jdk-name=\"17 (2)\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"jpab\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 713f74446eee8b1b9fd00f94e63038cc4b19af2c)
++++ b/.idea/misc.xml	(date 1681203331445)
+@@ -8,7 +8,7 @@
+       </list>
+     </option>
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="17 (2)" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17 (2)" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+   <component name="ProjectType">
+Index: src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateAddress.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package se.yalar.grupp5.sakiladata.controller.create;\r\n\r\nimport javafx.fxml.FXML;\r\nimport javafx.scene.control.Button;\r\nimport javafx.scene.control.TextField;\r\n\r\npublic class CreateAddress {\r\n    @FXML\r\n    private Button btnOk;\r\n    @FXML\r\n    private TextField tfAddressId, tfAddress, tfAddress2, tfDistrict, tfCityId, tfPhone, tfPostalCode, tfLatUpdate;\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateAddress.java b/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateAddress.java
+--- a/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateAddress.java	(revision 713f74446eee8b1b9fd00f94e63038cc4b19af2c)
++++ b/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateAddress.java	(date 1681204064082)
+@@ -11,4 +11,6 @@
+     private TextField tfAddressId, tfAddress, tfAddress2, tfDistrict, tfCityId, tfPhone, tfPostalCode, tfLatUpdate;
+ 
+ 
++
++
+ }
+Index: src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createActor.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createActor.fxml b/src/main/resources/se/yalar/grupp5/sakiladata/createActor.fxml
+rename from src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createActor.fxml
+rename to src/main/resources/se/yalar/grupp5/sakiladata/createActor.fxml
+--- a/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createActor.fxml	(revision 713f74446eee8b1b9fd00f94e63038cc4b19af2c)
++++ b/src/main/resources/se/yalar/grupp5/sakiladata/createActor.fxml	(date 1681203297588)
+@@ -10,7 +10,7 @@
+       <Label alignment="CENTER" layoutX="238.0" layoutY="14.0" prefHeight="42.0" prefWidth="124.0" text="Skådespelare" textFill="#3b58f5" />
+       <Label fx:id="lblLastName" layoutX="33.0" layoutY="196.0" prefHeight="17.0" prefWidth="96.0" text="Efternamn" />
+       <TextField fx:id="tfLastName" layoutX="156.0" layoutY="192.0" prefHeight="25.0" prefWidth="345.0" promptText="Efternamn" />
+-      <Button fx:id="btnOk" layoutX="238.0" layoutY="311.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="124.0" text="Ok" />
++      <Button fx:id="btnOk" layoutX="238.0" layoutY="311.0" mnemonicParsing="false" onAction="#create" prefHeight="57.0" prefWidth="124.0" text="Ok" />
+       <Label layoutX="33.0" layoutY="82.0" text="Skådespelarens Id" />
+       <Label layoutX="33.0" layoutY="249.0" prefHeight="17.0" prefWidth="96.0" text="Senast updaterat" />
+       <TextField fx:id="tfActorId" layoutX="156.0" layoutY="78.0" prefHeight="25.0" prefWidth="345.0" promptText="Skådespelarens Id" />
+Index: src/main/resources/se/yalar/grupp5/sakiladata/readTable.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import javafx.scene.control.*?>\r\n<?import javafx.scene.layout.*?>\r\n\r\n<AnchorPane prefHeight=\"750.0\" prefWidth=\"751.0\" xmlns=\"http://javafx.com/javafx/17.0.2-ea\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"se.yalar.grupp5.sakiladata.controller.read.ReadTable\">\r\n   <children>\r\n      <ScrollPane prefHeight=\"750\" prefWidth=\"750\">\r\n         <content>\r\n            <TableView prefHeight=\"750\" prefWidth=\"750\">\r\n              <columns>\r\n                <TableColumn prefWidth=\"75.0\" text=\"C1\" />\r\n                <TableColumn prefWidth=\"75.0\" text=\"C2\" />\r\n                  <TableColumn prefWidth=\"75.0\" text=\"C3\" />\r\n                  <TableColumn prefWidth=\"75.0\" text=\"C4\" />\r\n                  <TableColumn prefWidth=\"75.0\" text=\"C5\" />\r\n                  <TableColumn prefWidth=\"75.0\" text=\"C6\" />\r\n                  <TableColumn prefWidth=\"75.0\" text=\"C7\" />\r\n              </columns>\r\n            </TableView>\r\n         </content>\r\n      </ScrollPane>\r\n   </children>\r\n</AnchorPane>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/se/yalar/grupp5/sakiladata/readTable.fxml b/src/main/resources/se/yalar/grupp5/sakiladata/readTable.fxml
+--- a/src/main/resources/se/yalar/grupp5/sakiladata/readTable.fxml	(revision 713f74446eee8b1b9fd00f94e63038cc4b19af2c)
++++ b/src/main/resources/se/yalar/grupp5/sakiladata/readTable.fxml	(date 1681203297605)
+@@ -1,21 +1,23 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+-<?import javafx.scene.control.*?>
+-<?import javafx.scene.layout.*?>
++<?import javafx.scene.control.ScrollPane?>
++<?import javafx.scene.control.TableColumn?>
++<?import javafx.scene.control.TableView?>
++<?import javafx.scene.layout.AnchorPane?>
+ 
+-<AnchorPane prefHeight="750.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.yalar.grupp5.sakiladata.controller.read.ReadTable">
++<AnchorPane prefHeight="750.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.yalar.grupp5.sakiladata.controller.read.ReadTable">
+    <children>
+       <ScrollPane prefHeight="750" prefWidth="750">
+          <content>
+-            <TableView prefHeight="750" prefWidth="750">
++            <TableView prefHeight="750" prefWidth="748.0">
+               <columns>
+-                <TableColumn prefWidth="75.0" text="C1" />
+-                <TableColumn prefWidth="75.0" text="C2" />
+-                  <TableColumn prefWidth="75.0" text="C3" />
+-                  <TableColumn prefWidth="75.0" text="C4" />
+-                  <TableColumn prefWidth="75.0" text="C5" />
+-                  <TableColumn prefWidth="75.0" text="C6" />
+-                  <TableColumn prefWidth="75.0" text="C7" />
++                <TableColumn fx:id="colC1" prefWidth="104.0" text="C1" />
++                <TableColumn fx:id="colC2" prefWidth="94.0" text="C2" />
++                  <TableColumn fx:id="colC3" prefWidth="102.0" text="C3" />
++                  <TableColumn fx:id="colC4" prefWidth="121.0" text="C4" />
++                  <TableColumn fx:id="colC5" prefWidth="109.0" text="C5" />
++                  <TableColumn fx:id="colC6" prefWidth="102.0" text="C6" />
++                  <TableColumn fx:id="colC7" prefWidth="102.0" text="C7" />
+               </columns>
+             </TableView>
+          </content>
+Index: src/main/java/se/yalar/grupp5/sakiladata/controller/read/ReadTable.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package se.yalar.grupp5.sakiladata.controller.read;\r\n\r\npublic class ReadTable {\r\n    \r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/se/yalar/grupp5/sakiladata/controller/read/ReadTable.java b/src/main/java/se/yalar/grupp5/sakiladata/controller/read/ReadTable.java
+--- a/src/main/java/se/yalar/grupp5/sakiladata/controller/read/ReadTable.java	(revision 713f74446eee8b1b9fd00f94e63038cc4b19af2c)
++++ b/src/main/java/se/yalar/grupp5/sakiladata/controller/read/ReadTable.java	(date 1681203297611)
+@@ -1,5 +1,69 @@
+ package se.yalar.grupp5.sakiladata.controller.read;
+ 
++import javafx.fxml.FXML;
++import javafx.scene.control.TableColumn;
++import javafx.scene.control.TableView;
++import javafx.scene.control.cell.PropertyValueFactory;
++import se.yalar.grupp5.sakiladata.StartMenu;
++import se.yalar.grupp5.sakiladata.entities.Actor;
++
+ public class ReadTable {
+-    
++    @FXML
++    private TableView<Actor> table;
++    @FXML
++    private TableColumn<Actor, Integer> id;
++
++    @FXML
++    void read(){
++        String btninfo = StartMenu.lastBtn;
++        try {
++            switch (btninfo){
++                case "Actor":
++                    TableColumn<Actor, Integer> actorId = new TableColumn<>("Actor Id");
++                    actorId.setCellValueFactory(new PropertyValueFactory<>("id"));
++                    TableColumn<Actor, String> actorName = new TableColumn<>("Actor name");
++                    actorName.setCellValueFactory(new PropertyValueFactory<>("firstName"));
++                    this.table.getColumns().addAll(new TableColumn[]{actorId, actorName});
++                    break;
++                case "Address":
++
++                    break;
++                case "City":
++
++                    break;
++                case "Customer":
++
++                    break;
++                case "Film":
++
++                    break;
++                case "FilmActor":
++
++                    break;
++                case "FilmCategory":
++
++                    break;
++                case "FilmText":
++
++                    break;
++                case "Inventory":
++
++                    break;
++                case "Payment":
++
++                    break;
++                case "Rental":
++
++                    break;
++                case "Staff":
++
++                    break;
++                case "Store":
++
++                    break;
++            }
++        } catch (Exception e) {
++            e.printStackTrace();
++        }
++    }
+ }
+diff --git a/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createRental.fxml b/src/main/resources/se/yalar/grupp5/sakiladata/createRental.fxml
+rename from src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createRental.fxml
+rename to src/main/resources/se/yalar/grupp5/sakiladata/createRental.fxml
+diff --git a/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createStaff.fxml b/src/main/resources/se/yalar/grupp5/sakiladata/createStaff.fxml
+rename from src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createStaff.fxml
+rename to src/main/resources/se/yalar/grupp5/sakiladata/createStaff.fxml
+diff --git a/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createFilmText.fxml b/src/main/resources/se/yalar/grupp5/sakiladata/createFilmText.fxml
+rename from src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createFilmText.fxml
+rename to src/main/resources/se/yalar/grupp5/sakiladata/createFilmText.fxml
+diff --git a/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createPayment.fxml b/src/main/resources/se/yalar/grupp5/sakiladata/createPayment.fxml
+rename from src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createPayment.fxml
+rename to src/main/resources/se/yalar/grupp5/sakiladata/createPayment.fxml
+diff --git a/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createFilm.fxml b/src/main/resources/se/yalar/grupp5/sakiladata/createFilm.fxml
+rename from src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createFilm.fxml
+rename to src/main/resources/se/yalar/grupp5/sakiladata/createFilm.fxml
+diff --git a/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createStore.fxml b/src/main/resources/se/yalar/grupp5/sakiladata/createStore.fxml
+rename from src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createStore.fxml
+rename to src/main/resources/se/yalar/grupp5/sakiladata/createStore.fxml
+diff --git a/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createFilmCategory.fxml b/src/main/resources/se/yalar/grupp5/sakiladata/createFilmCategory.fxml
+rename from src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createFilmCategory.fxml
+rename to src/main/resources/se/yalar/grupp5/sakiladata/createFilmCategory.fxml
+diff --git a/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createAddress.fxml b/src/main/resources/se/yalar/grupp5/sakiladata/createAddress.fxml
+rename from src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createAddress.fxml
+rename to src/main/resources/se/yalar/grupp5/sakiladata/createAddress.fxml
+diff --git a/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createInventory.fxml b/src/main/resources/se/yalar/grupp5/sakiladata/createInventory.fxml
+rename from src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createInventory.fxml
+rename to src/main/resources/se/yalar/grupp5/sakiladata/createInventory.fxml
+diff --git a/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createFilmActor.fxml b/src/main/resources/se/yalar/grupp5/sakiladata/createFilmActor.fxml
+rename from src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createFilmActor.fxml
+rename to src/main/resources/se/yalar/grupp5/sakiladata/createFilmActor.fxml
+diff --git a/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createCity.fxml b/src/main/resources/se/yalar/grupp5/sakiladata/createCity.fxml
+rename from src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createCity.fxml
+rename to src/main/resources/se/yalar/grupp5/sakiladata/createCity.fxml
+diff --git a/src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createCustomer.fxml b/src/main/resources/se/yalar/grupp5/sakiladata/createCustomer.fxml
+rename from src/main/resources/se/yalar/grupp5/sakiladata/createFXML/createCustomer.fxml
+rename to src/main/resources/se/yalar/grupp5/sakiladata/createCustomer.fxml

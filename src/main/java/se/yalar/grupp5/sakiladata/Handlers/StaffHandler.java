@@ -1,62 +1,70 @@
-
 package se.yalar.grupp5.sakiladata.Handlers;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import se.yalar.grupp5.sakiladata.entities.Actor;
+import se.yalar.grupp5.sakiladata.entities.Staff;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
-public class ActorHandler {
-
-    public List<Actor> getTable(){
-        List<Actor> actorList = null;
+public class StaffHandler {
+    public List<Staff> getTable(){
+        List<Staff> staffList = null;
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
         session.beginTransaction();
 
         try {
             CriteriaBuilder builder = session.getCriteriaBuilder();
-            CriteriaQuery<Actor> criteria = builder.createQuery(Actor.class);
-            Root<Actor> root = criteria.from(Actor.class);
+            CriteriaQuery<Staff> criteria = builder.createQuery(Staff.class);
+            Root<Staff> root = criteria.from(Staff.class);
             criteria.select(root);
-            actorList = session.createQuery(criteria).getResultList();
+            staffList = session.createQuery(criteria).getResultList();
         } catch (HibernateException e) {
             e.printStackTrace();
         } finally {
             session.close();
             sessionFactory.close();
         }
-        return actorList;
+        return staffList;
     }
-    public int insert(Actor newActor) {
+    public int insert(Staff newStaff) {
+
+        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+        try (Session session = sessionFactory.openSession()) {
+            session.beginTransaction();
+            session.persist(newStaff);
+
+            session.getTransaction().commit();
+            session.close();
+        }
+
+        return newStaff.getId();
+    }
+
+    public int update(Staff updateStaff) {
 
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
         session.beginTransaction();
-        session.persist(newActor);
+        Staff staff = session.get(Staff.class, updateStaff.getId());
 
-        session.getTransaction().commit();
-        session.close();
+        staff.setAddress(updateStaff.getAddress());
+        staff.setEmail(updateStaff.getEmail());
+        staff.setFirstName(updateStaff.getFirstName());
+        staff.setLastName(updateStaff.getLastName());
+        staff.setActive(updateStaff.isActive());
+        staff.setPassword(updateStaff.getPassword());
+        staff.setStore(updateStaff.getStore());
+        staff.setUserName(updateStaff.getUserName());
+        staff.setLastUpdate(updateStaff.getLastUpdate());
+        staff.setPicture(updateStaff.getPicture());
 
-
-        return newActor.getId();
-    }
-
-    public int update(Actor updateActor) {
-
-        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
-        Session session = sessionFactory.openSession();
-        session.beginTransaction();
-        Actor actor = session.get(Actor.class, updateActor.getId());
-        actor.setFirstName(updateActor.getFirstName());
-        actor.setLastName(updateActor.getLastName());
-        session.update(actor);
+        session.update(staff);
 
         session.getTransaction().commit();
         session.close();
@@ -69,22 +77,21 @@ public class ActorHandler {
         Session session = sessionFactory.openSession();
         session.beginTransaction();
 
-        Actor actor = session.get(Actor.class, id);
+        Staff staff = session.get(Staff.class, id);
 
-        session.delete(actor);
+        session.delete(staff);
 
         session.getTransaction().commit();
         session.close();
         return 0;
     }
 
-    public Actor getById(int id){
+    public Staff getById(int id){
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
         session.beginTransaction();
-        Actor actor = session.get(Actor.class, id);
+        Staff staff = session.get(Staff.class, id);
         session.close();
-        return actor;
+        return staff;
     }
 }
-

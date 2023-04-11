@@ -8,12 +8,13 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import se.yalar.grupp5.sakiladata.StartMenu;
 
 import java.io.IOException;
 
 public class Read {
     @FXML
-    private Button btnOk, btnShowTable;
+    private Button btnShowTable;
     @FXML
     private TextField tfId;
 
@@ -25,6 +26,51 @@ public class Read {
     }
     @FXML
     void getId(ActionEvent event) throws IOException {
+        String btninfo = StartMenu.lastBtn;
+        try {
+            switch (btninfo){
+                case "Actor":
+                    //Get by actor_id
+                    break;
+                case "Address":
 
+                    break;
+                case "City":
+
+                    break;
+                case "Customer":
+
+                    break;
+                case "Film":
+
+                    break;
+                case "FilmActor":
+
+                    break;
+                case "FilmCategory":
+
+                    break;
+                case "FilmText":
+
+                    break;
+                case "Inventory":
+
+                    break;
+                case "Payment":
+
+                    break;
+                case "Rental":
+
+                    break;
+                case "Staff":
+
+                    break;
+                case "Store":
+
+                    break;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

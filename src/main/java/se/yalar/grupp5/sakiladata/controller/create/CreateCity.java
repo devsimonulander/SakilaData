@@ -6,7 +6,5 @@ import javafx.scene.control.TextField;
 
 public class CreateCity {
     @FXML
-    private Button btnOk;
-    @FXML
-    private TextField tfCityId, tfCity, tfCountryId, tfLastUpdate;
+    private TextField tfCityId, tfCity, tfCountryId;
 }
