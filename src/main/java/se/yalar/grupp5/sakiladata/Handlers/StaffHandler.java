@@ -57,7 +57,7 @@ public class StaffHandler {
         staff.setEmail(updateStaff.getEmail());
         staff.setFirstName(updateStaff.getFirstName());
         staff.setLastName(updateStaff.getLastName());
-        staff.setActive(updateStaff.getActive());
+        staff.setActive(updateStaff.isActive());
         staff.setPassword(updateStaff.getPassword());
         staff.setStore(updateStaff.getStore());
         staff.setUserName(updateStaff.getUserName());
