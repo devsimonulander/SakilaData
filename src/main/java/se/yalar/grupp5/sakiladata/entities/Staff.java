@@ -19,7 +19,7 @@ public class Staff implements Serializable {
     private String firstName;
 
     @Column(name = "last_name")
-    private int lastName;
+    private String lastName;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "address_id")
