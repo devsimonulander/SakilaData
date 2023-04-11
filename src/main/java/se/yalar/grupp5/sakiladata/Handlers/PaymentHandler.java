@@ -4,7 +4,6 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import se.yalar.grupp5.sakiladata.entities.Actor;
 import se.yalar.grupp5.sakiladata.entities.Payment;
 
 import javax.persistence.criteria.CriteriaBuilder;
@@ -52,7 +51,7 @@ public class PaymentHandler {
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
         session.beginTransaction();
-        Payment payment = session.get(Actor.class, updatePayment.getId());
+        Payment payment = session.get(Payment.class, updatePayment.getId());
 
         payment.setPaymentDate(updatePayment.getPaymentDate());
         payment.setAmount(updatePayment.getAmount());
