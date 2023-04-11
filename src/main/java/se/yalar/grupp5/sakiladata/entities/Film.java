@@ -4,9 +4,13 @@ package se.yalar.grupp5.sakiladata.entities;
 import jakarta.persistence.*;
 import org.hibernate.mapping.Set;
 
+import java.io.Serializable;
+
 @Entity
 @Table(name = "film")
-public class Film {
+public class Film implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

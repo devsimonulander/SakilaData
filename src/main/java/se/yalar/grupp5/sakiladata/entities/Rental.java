@@ -2,11 +2,15 @@ package se.yalar.grupp5.sakiladata.entities;
 
 import jakarta.persistence.*;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name="rental")
-public class Rental {
+public class Rental implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int rentalId;

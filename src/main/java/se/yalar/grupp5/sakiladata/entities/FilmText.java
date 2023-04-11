@@ -2,9 +2,13 @@ package se.yalar.grupp5.sakiladata.entities;
 
 import jakarta.persistence.*;
 
+import java.io.Serializable;
+
 @Entity
 @Table(name = "film_text")
-public class FilmText {
+public class FilmText implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     @Id
     @OneToOne(cascade = CascadeType.ALL)
