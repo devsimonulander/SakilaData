@@ -14,7 +14,12 @@ public class CreateFilm {
     @FXML
     public void create(){
         Film film = new Film();
-        film.setId(Integer.parseInt(tfFilmId.getText()));
+        film.setTitle(tfTitle.getText());
+        film.setReleaseYear(Integer.parseInt(tfReleaseYear.getText()));
+        film.setLength(Integer.parseInt(tfLength.getText()));
+        film.setRating(tfRating.getText());
+
+        //   film.setId(Integer.parseInt(tfFilmId.getText()));
         FilmHandler filmHandler = new FilmHandler();
         filmHandler.insert(film);
     }

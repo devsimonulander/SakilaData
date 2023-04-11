@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48c5fd85-cd2c-4fab-97c1-518971515938" name="Changes" comment="Implementerade Serializable på alla klasser oach la till serialVersionUID">
+    <list default="true" id="48c5fd85-cd2c-4fab-97c1-518971515938" name="Changes" comment="Lagt till Handler för FilmActor samt FilmCategory&#10;Justerat entitetsklasser för dessa också">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/FilmHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/FilmHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateFilm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateFilm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/entities/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/entities/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/entities/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/entities/Film.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,25 +39,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/faiz-/IdeaProjects/SakilaData/src/main/java/se/yalar/grupp5/sakiladata&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/faiz-/Java/SkiTimer/out/production/OOP19_Group5/application&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_directory_selection": "C:/Users/faiz-/IdeaProjects/SakilaData/src/main/java/se/yalar/grupp5/sakiladata",
+    "last_opened_file_path": "C:/Users/allee/Downloads/SceneBuilder-19.0.0.msi",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "settings.sync",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\faiz-\IdeaProjects\SakilaData\src\main\resources\se\yalar\grupp5\sakiladata\createFXML" />

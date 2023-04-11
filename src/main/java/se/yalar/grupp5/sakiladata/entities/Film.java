@@ -47,7 +47,7 @@ public class Film implements Serializable {
     private double replacementCost;
 
     @Column(name = "rating")
-    private Rating rating;
+    private String rating;
 
     @Column(name = "special_features")
     private Set specialFeatures;
@@ -138,11 +138,11 @@ public class Film implements Serializable {
         this.replacementCost = replacementCost;
     }
 
-    public Rating getRating() {
+    public String getRating() {
         return rating;
     }
 
-    public void setRating(Rating rating) {
+    public void setRating(String rating) {
         this.rating = rating;
     }
 

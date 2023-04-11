@@ -47,6 +47,7 @@ public class FilmHandler {
         film.setRentalRate(updateFilm.getRentalRate());
         film.setLength(updateFilm.getLength());
         film.setReplacementCost(updateFilm.getReplacementCost());
+        film.setRating(updateFilm.getRating());
         film.setSpecialFeatures(updateFilm.getSpecialFeatures());
         session.update(film);
 

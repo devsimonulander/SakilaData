@@ -2,6 +2,7 @@ package se.yalar.grupp5.sakiladata.entities;
 
 import jakarta.persistence.*;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -9,6 +10,7 @@ import java.util.ArrayList;
 @Table(name = "customer")
 public class Customer implements Serializable {
 
+    @Serial
     private static final long serialVersionUID = 1L;
 
     @Id
