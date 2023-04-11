@@ -4,7 +4,6 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import se.yalar.grupp5.sakiladata.entities.City;
 import se.yalar.grupp5.sakiladata.entities.Country;
 
 import javax.persistence.criteria.CriteriaBuilder;
@@ -12,17 +11,17 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
-public class CityHandler {
-    public List<City> getTable(){
-        List<City> list = null;
+public class CountryHandler {
+    public List<Country> getTable(){
+        List<Country> list = null;
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
         session.beginTransaction();
 
         try {
             CriteriaBuilder builder = session.getCriteriaBuilder();
-            CriteriaQuery<City> criteria = builder.createQuery(City.class);
-            Root<City> root = criteria.from(City.class);
+            CriteriaQuery<Country> criteria = builder.createQuery(Country.class);
+            Root<Country> root = criteria.from(Country.class);
             criteria.select(root);
             list = session.createQuery(criteria).getResultList();
         } catch (HibernateException e) {
@@ -34,40 +33,40 @@ public class CityHandler {
         return list;
     }
 
-    public  City getById(int id) {
+    public  Country getById(int id) {
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
         session.beginTransaction();
-        City city = session.get(City.class, id);
+        Country country = session.get(Country.class, id);
         session.close();
-        return city;
+        return country;
 
     }
 
-    public int insert(City newCity) {
+    public int insert(Country newCountry) {
 
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
         session.beginTransaction();
-        session.persist(newCity);
+        session.persist(newCountry);
 
         session.getTransaction().commit();
         session.close();
 
-        return newCity.getId();
+        return newCountry.getId();
     }
 
-    public int update(City updateCity) {
+    public int update(Country updateCountry) {
 
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
         session.beginTransaction();
-        City City = session.get(City.class, updateCity.getId());
+        Country country = session.get(Country.class, updateCountry.getId());
 
-        City.setCity(updateCity.getCity());
-        City.setCountry(updateCity.getCountry());
+        country.setCountry(updateCountry.getCountry());
+        country.setLastUpdate(updateCountry.getLastUpdate());
 
-        session.update(City);
+        session.update(country);
 
         session.getTransaction().commit();
         session.close();
@@ -80,21 +79,21 @@ public class CityHandler {
         Session session = sessionFactory.openSession();
         session.beginTransaction();
 
-        City city = session.get(City.class, id);
+        Country country = session.get(Country.class, id);
 
-        session.delete(city);
+        session.delete(country);
 
         session.getTransaction().commit();
         session.close();
     }
 
 
-    public int create(String cityName, Country country) {
-        City city = new City();
+    public int create(String countryName, String lastUpdate) {
+        Country country = new Country();
 
-        city.setCity(cityName);
-        city.setCountry(country);
+        country.setCountry(countryName);
+        country.setLastUpdate(lastUpdate);
 
-        return insert(city);
+        return insert(country);
     }
 }

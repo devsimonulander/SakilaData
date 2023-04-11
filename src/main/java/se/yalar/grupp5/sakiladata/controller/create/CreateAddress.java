@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import se.yalar.grupp5.sakiladata.Handlers.ActorHandler;
+import se.yalar.grupp5.sakiladata.Handlers.CityHandler;
 import se.yalar.grupp5.sakiladata.entities.Address;
 import se.yalar.grupp5.sakiladata.Handlers.AddressHandler;
 import se.yalar.grupp5.sakiladata.entities.City;
@@ -19,7 +20,11 @@ public class CreateAddress {
         address.setAddress(tfAddress.getText());
         address.setAddress2(tfAddress2.getText());
         address.setDistrict(tfDistrict.getText());
-        address.setCity(new City()); //TODO
+
+        CityHandler cityHandler = new CityHandler();
+        City city = cityHandler.getById(Integer.parseInt(tfCityId.getText()));
+        address.setCity(city);
+
         address.setPhoneNumber(Integer.parseInt(tfPhone.getText()));
         address.setPostalCode(Integer.parseInt(tfPostalCode.getText()));
 
