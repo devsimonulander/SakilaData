@@ -11,7 +11,7 @@ import java.sql.Timestamp;
  */
 @Embeddable
 public class FilmCategoryPK implements Serializable {
-    //default serial version id, required for serializable classes.
+
     @Serial
     private static final long serialVersionUID = 1L;
 

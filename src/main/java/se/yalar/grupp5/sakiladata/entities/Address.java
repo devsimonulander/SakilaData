@@ -3,9 +3,13 @@ package se.yalar.grupp5.sakiladata.entities;
 import org.locationtech.jts.geom.GeometryFactory;
 import jakarta.persistence.*;
 
+import java.io.Serializable;
+
 @Entity
 @Table(name = "address")
-public class Address {
+public class Address implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

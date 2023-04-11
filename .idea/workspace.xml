@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e68e1e8f-885a-4bd8-90b7-5b45bdfac2e2" name="Changes" comment="Lagt till Handler för FilmActor samt FilmCategory&#10;Justerat entitetsklasser för dessa också" />
+    <list default="true" id="48c5fd85-cd2c-4fab-97c1-518971515938" name="Changes" comment="Implementerade Serializable på alla klasser oach la till serialVersionUID">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +27,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2NxCnqqsSc6oh0SjwiF46bgARjN" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -108,7 +110,13 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1681219865173</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="Implementerade Serializable på alla klasser oach la till serialVersionUID">
+      <created>1681227351978</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1681227351978</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +138,8 @@
     <MESSAGE value="Crud controllers" />
     <MESSAGE value="Lagt till FilmHandler" />
     <MESSAGE value="Lagt till Handler för FilmActor samt FilmCategory&#10;Justerat entitetsklasser för dessa också" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lagt till Handler för FilmActor samt FilmCategory&#10;Justerat entitetsklasser för dessa också" />
+    <MESSAGE value="Implementerade Serializable på alla klasser oach la till serialVersionUID" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementerade Serializable på alla klasser oach la till serialVersionUID" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

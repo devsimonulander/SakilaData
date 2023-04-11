@@ -2,12 +2,15 @@ package se.yalar.grupp5.sakiladata.entities;
 
 import jakarta.persistence.*;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Table(name = "inventory")
-public class Inventory {
+public class Inventory implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
