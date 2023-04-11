@@ -78,5 +78,6 @@ public class InventoryHandler {
         session.delete(inventory);
         session.getTransaction().commit();
         session.close();
+        sessionFactory.close();
     }
 }
