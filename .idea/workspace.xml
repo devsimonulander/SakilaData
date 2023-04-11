@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48c5fd85-cd2c-4fab-97c1-518971515938" name="Changes" comment="Implementerade Serializable på alla klasser oach la till serialVersionUID">
+    <list default="true" id="48c5fd85-cd2c-4fab-97c1-518971515938" name="Changes" comment="Skapade CountryHandler och CreateCity.">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b42531a-00b2-4217-9a34-15f62c548f14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5b42531a-00b2-4217-9a34-15f62c548f14.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateCustomer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +69,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e68e1e8f-885a-4bd8-90b7-5b45bdfac2e2" name="Changes" comment="" />
+      <changelist id="48c5fd85-cd2c-4fab-97c1-518971515938" name="Changes" comment="Skapade CountryHandler och CreateCity." />
       <created>1680593000499</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -83,6 +86,7 @@
       <workItem from="1681142594463" duration="604000" />
       <workItem from="1681194957687" duration="312000" />
       <workItem from="1681198346093" duration="13335000" />
+      <workItem from="1681243865931" duration="1315000" />
     </task>
     <task id="LOCAL-00001" summary="hej">
       <created>1680594532034</created>
@@ -116,7 +120,14 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1681227351978</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Skapade CountryHandler och CreateCity.">
+      <created>1681242313076</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681242313076</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +150,8 @@
     <MESSAGE value="Lagt till FilmHandler" />
     <MESSAGE value="Lagt till Handler för FilmActor samt FilmCategory&#10;Justerat entitetsklasser för dessa också" />
     <MESSAGE value="Implementerade Serializable på alla klasser oach la till serialVersionUID" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementerade Serializable på alla klasser oach la till serialVersionUID" />
+    <MESSAGE value="Skapade CountryHandler och CreateCity." />
+    <option name="LAST_COMMIT_MESSAGE" value="Skapade CountryHandler och CreateCity." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
