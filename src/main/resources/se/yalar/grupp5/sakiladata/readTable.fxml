@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="750.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.yalar.grupp5.sakiladata.ReadTable">
+<AnchorPane prefHeight="750.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.yalar.grupp5.sakiladata.controller.read.ReadTable">
    <children>
       <ScrollPane prefHeight="750" prefWidth="750">
          <content>

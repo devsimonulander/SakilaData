@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.yalar.grupp5.sakiladata.Read">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.yalar.grupp5.sakiladata.controller.read.Read">
    <children>
       <Button fx:id="btnOk" layoutX="257.0" layoutY="152.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="87.0" text="Ok" />
       <Label alignment="CENTER" layoutX="267.0" layoutY="14.0" prefHeight="36.0" prefWidth="66.0" text="Visa" />

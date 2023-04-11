@@ -1,4 +1,4 @@
-package se.yalar.grupp5.sakiladata;
+package se.yalar.grupp5.sakiladata.controller.read;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

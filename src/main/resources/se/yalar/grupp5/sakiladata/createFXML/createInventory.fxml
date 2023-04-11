@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.yalar.grupp5.sakiladata.CreateInventory">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.yalar.grupp5.sakiladata.controller.create.CreateInventory">
    <children>
       <Button fx:id="btnOk" layoutX="258.0" layoutY="291.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="85.0" text="Ok" />
       <Label alignment="CENTER" layoutX="269.0" layoutY="14.0" prefHeight="35.0" prefWidth="63.0" text="Lager" />

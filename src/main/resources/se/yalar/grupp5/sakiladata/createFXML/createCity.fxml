@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.yalar.grupp5.sakiladata.CreateCity">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.yalar.grupp5.sakiladata.controller.create.CreateCity">
    <children>
       <Label alignment="CENTER" layoutX="237.0" layoutY="26.0" prefHeight="49.0" prefWidth="127.0" text="Stad" textFill="#1e6cf7" />
       <Button fx:id="btnOk" layoutX="248.0" layoutY="307.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="104.0" text="Ok" />

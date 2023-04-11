@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.yalar.grupp5.sakiladata.CreateAddress">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.yalar.grupp5.sakiladata.controller.create.CreateAddress">
    <children>
       <TextField fx:id="tfAddress" layoutX="161.0" layoutY="106.0" prefHeight="31.0" prefWidth="399.0" promptText="Adress" />
       <Label alignment="CENTER" layoutX="247.0" layoutY="14.0" prefHeight="44.0" prefWidth="106.0" text="Adress" textFill="#3740f0" />
