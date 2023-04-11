@@ -2,45 +2,69 @@ package se.yalar.grupp5.sakiladata.entities;
 
 import jakarta.persistence.*;
 
-@Entity
-@Table(name = "film_category")
-public class FilmCategory {
+import java.io.Serial;
+import java.io.Serializable;
+import java.sql.Timestamp;
 
-    // säkerställ så att det är rätt gjort på nedan attribut
-    @Id
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "film_id")
-    private Film film;
+
+/**
+ * The persistent class for the film_category database table.
+ *
+ */
+@Entity
+@Table(name="film_category")
+@NamedQuery(name="FilmCategory.findAll", query="SELECT f FROM FilmCategory f")
+public class FilmCategory implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
+
+    @EmbeddedId
+    private FilmCategoryPK id;
+
+    @Column(name="last_update")
+    private Timestamp lastUpdate;
 
     @ManyToOne
-    @JoinColumn(name = "category_id")
+    @JoinColumn(name="category_id")
     private Category category;
 
-    public FilmCategory(){
+    @ManyToOne
+    @JoinColumn(name="film_id")
+    private Film film;
 
+    public FilmCategory() {
     }
 
-    public Film getFilm() {
-        return film;
+    public FilmCategoryPK getId() {
+        return this.id;
     }
 
-    public void setFilm(Film film) {
-        this.film = film;
+    public void setId(FilmCategoryPK id) {
+        this.id = id;
+    }
+
+    public Timestamp getLastUpdate() {
+        return this.lastUpdate;
+    }
+
+    public void setLastUpdate(Timestamp lastUpdate) {
+        this.lastUpdate = lastUpdate;
     }
 
     public Category getCategory() {
-        return category;
+        return this.category;
     }
 
     public void setCategory(Category category) {
         this.category = category;
     }
 
-    @Override
-    public String toString() {
-        return "FilmCategory{" +
-                "film=" + film +
-                ", category=" + category +
-                '}';
+    public Film getFilm() {
+        return this.film;
     }
+
+    public void setFilm(Film film) {
+        this.film = film;
+    }
+
 }

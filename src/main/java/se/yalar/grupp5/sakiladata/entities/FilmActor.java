@@ -2,49 +2,68 @@ package se.yalar.grupp5.sakiladata.entities;
 
 import jakarta.persistence.*;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.io.Serial;
+import java.io.Serializable;
+import java.sql.Timestamp;
 
+
+/**
+ * The persistent class for the film_actor database table.
+ */
 @Entity
 @Table(name = "film_actor")
-public class FilmActor {
+@NamedQuery(name = "FilmActor.findAll", query = "SELECT f FROM FilmActor f")
+public class FilmActor implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
 
+    @EmbeddedId
+    private FilmActorPK id;
 
-    // säkerställ så att det är rätt gjort på nedan attribut
-    @Id
-    @OneToOne(cascade = CascadeType.ALL)
+    @Column(name = "last_update")
+    private Timestamp lastUpdate;
+
+    @ManyToOne
     @JoinColumn(name = "actor_id")
     private Actor actor;
 
-    @OneToMany(targetEntity = Film.class, mappedBy = "film_actor", cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "film_id")
-    private List<Film> filmList = new ArrayList<>();
+    private Film film;
 
-    public FilmActor(){
+    public FilmActor() {
+    }
 
+    public FilmActorPK getId() {
+        return this.id;
+    }
+
+    public void setId(FilmActorPK id) {
+        this.id = id;
+    }
+
+    public Timestamp getLastUpdate() {
+        return this.lastUpdate;
+    }
+
+    public void setLastUpdate(Timestamp lastUpdate) {
+        this.lastUpdate = lastUpdate;
     }
 
     public Actor getActor() {
-        return actor;
+        return this.actor;
     }
 
     public void setActor(Actor actor) {
         this.actor = actor;
     }
 
-    public List<Film> getFilmList() {
-        return filmList;
+    public Film getFilm() {
+        return this.film;
     }
 
-    public void setFilmList(List<Film> filmList) {
-        this.filmList = filmList;
+    public void setFilm(Film film) {
+        this.film = film;
     }
 
-    @Override
-    public String toString() {
-        return "FilmActor{" +
-                "actor=" + actor +
-                ", filmList=" + filmList +
-                '}';
-    }
 }
