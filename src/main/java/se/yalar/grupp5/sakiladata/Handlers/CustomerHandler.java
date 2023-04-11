@@ -1,4 +1,3 @@
-/*
 package se.yalar.grupp5.sakiladata.Handlers;
 
 import java.sql.Date;
@@ -83,4 +82,3 @@ public class CustomerHandler {
     }
 
 }
-*/

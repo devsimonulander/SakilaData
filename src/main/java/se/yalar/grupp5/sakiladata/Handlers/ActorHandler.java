@@ -1,4 +1,4 @@
-/*
+
 package se.yalar.grupp5.sakiladata.Handlers;
 
 import org.hibernate.HibernateException;
@@ -87,4 +87,4 @@ public class ActorHandler {
         return actor;
     }
 }
-*/
+

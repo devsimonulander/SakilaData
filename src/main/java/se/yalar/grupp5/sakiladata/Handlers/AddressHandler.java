@@ -1,4 +1,3 @@
-/*
 package se.yalar.grupp5.sakiladata.Handlers;
 
 import java.util.List;
@@ -105,4 +104,4 @@ public class AddressHandler {
         return insert(address);
     }
 
-}*/
+}

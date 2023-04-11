@@ -5,44 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e68e1e8f-885a-4bd8-90b7-5b45bdfac2e2" name="Changes" comment="Crud controllers">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/CreateActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateActor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/CreateAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateAddress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/CreateCity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateCity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/CreateCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/CreateFilm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateFilm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/CreateFilmActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateFilmActor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/CreateFilmCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateFilmCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/CreateFilmText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateFilmText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/CreateInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateInventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/CreatePayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreatePayment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/CreateRental.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateRental.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/CreateStaff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateStaff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/CreateStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/create/CreateStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b42531a-00b2-4217-9a34-15f62c548f14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5b42531a-00b2-4217-9a34-15f62c548f14.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-04-09_10_55__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-04-09_10_55__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/ActorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/ActorHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/AddressHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/AddressHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/CategoryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/CategoryHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/CityHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/CityHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Read.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/read/Read.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/ReadById.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/read/ReadById.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/ReadTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/controller/read/ReadTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createActor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createActor.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createAddress.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createAddress.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createCity.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createCity.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createCustomer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createCustomer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFilm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFilm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFilmActor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFilmActor.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFilmCategory.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFilmCategory.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFilmText.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createFilmText.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createInventory.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createInventory.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createPayment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createPayment.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createRental.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createRental.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createStaff.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createStaff.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createStore.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/createStore.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/read.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/read.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/readById.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/readById.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/readTable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/yalar/grupp5/sakiladata/readTable.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/CustomerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/grupp5/sakiladata/Handlers/CustomerHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +88,7 @@
       <workItem from="1681138498458" duration="889000" />
       <workItem from="1681142594463" duration="604000" />
       <workItem from="1681194957687" duration="312000" />
+      <workItem from="1681198346093" duration="320000" />
     </task>
     <task id="LOCAL-00001" summary="hej">
       <created>1680594532034</created>
