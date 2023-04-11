@@ -1,6 +1,6 @@
 package se.yalar.grupp5.sakiladata.entities;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "language")
@@ -8,7 +8,8 @@ public class Language {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    @Column(name="language_id")
+    private int languageId;
 
     @Column(name = "name")
     private String name;
@@ -20,12 +21,12 @@ public class Language {
 
     }
 
-    public int getId() {
-        return id;
+    public int getLanguageId() {
+        return languageId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setLanguageId(int id) {
+        this.languageId = languageId;
     }
 
     public String getName() {
@@ -47,7 +48,7 @@ public class Language {
     @Override
     public String toString() {
         return "Language{" +
-                "id=" + id +
+                "languageId=" + languageId +
                 ", name='" + name + '\'' +
                 '}';
     }

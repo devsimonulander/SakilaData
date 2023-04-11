@@ -1,6 +1,6 @@
 package se.yalar.grupp5.sakiladata.entities;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "staff")
@@ -8,7 +8,8 @@ public class Staff {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    @Column(name="staff_id")
+    private int staffId;
 
     @Column(name = "first_name")
     private String firstName;
@@ -46,12 +47,12 @@ public class Staff {
 
     }
 
-    public int getId() {
-        return id;
+    public int getStaffId() {
+        return staffId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setStaffId(int id) {
+        this.staffId = staffId;
     }
 
     public String getFirstName() {
@@ -137,7 +138,7 @@ public class Staff {
     @Override
     public String toString() {
         return "Staff{" +
-                "id=" + id +
+                "staffId=" + staffId +
                 ", firstName='" + firstName + '\'' +
                 ", lastName=" + lastName +
                 ", address=" + address +

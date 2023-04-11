@@ -43,7 +43,7 @@ public class StaffHandler {
             session.close();
         }
 
-        return newStaff.getId();
+        return newStaff.getStaffId();
     }
 
     public int update(Staff updateStaff) {
@@ -51,7 +51,7 @@ public class StaffHandler {
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
         session.beginTransaction();
-        Staff staff = session.get(Staff.class, updateStaff.getId());
+        Staff staff = session.get(Staff.class, updateStaff.getStaffId());
 
         staff.setAddress(updateStaff.getAddress());
         staff.setEmail(updateStaff.getEmail());

@@ -15,4 +15,6 @@ module com.example.sakiladata {
     exports se.yalar.grupp5.sakiladata.controller.create;
     opens se.yalar.grupp5.sakiladata.controller.create to javafx.fxml;
 
+    exports se.yalar.grupp5.sakiladata.entities;
+    opens se.yalar.grupp5.sakiladata.entities;
 }

@@ -28,7 +28,7 @@ public class FilmHandler {
         session.getTransaction().commit();
         session.close();
 
-        return newFilm.getId();
+        return newFilm.getFilmId();
     }
 
     public void update(Film updateFilm) {
@@ -37,7 +37,7 @@ public class FilmHandler {
         Session session = sessionFactory.openSession();
         session.beginTransaction();
 
-        Film film = session.get(Film.class, updateFilm.getId());
+        Film film = session.get(Film.class, updateFilm.getFilmId());
         film.setTitle(updateFilm.getTitle());
         film.setDescription(updateFilm.getDescription());
         film.setReleaseYear(updateFilm.getReleaseYear());

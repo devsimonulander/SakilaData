@@ -1,13 +1,14 @@
 package se.yalar.grupp5.sakiladata.entities;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "actor")
 public class Actor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    @Column(name="actor_id")
+    public int actorId;
 
     @Column(name = "first_name")
     private String firstName;
@@ -21,12 +22,12 @@ public class Actor {
     public Actor() {
     }
 
-    public int getId() {
-        return id;
+    public int getActorId() {
+        return actorId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setActorId(int actorId) {
+        this.actorId = actorId;
     }
 
     public String getFirstName() {
@@ -56,7 +57,7 @@ public class Actor {
     @Override
     public String toString() {
         return "Actor{" +
-                "id=" + id +
+                "actorId=" + actorId +
                 ", firstName='" + firstName + '\'' +
                 ", lastName=" + lastName +
                 '}';

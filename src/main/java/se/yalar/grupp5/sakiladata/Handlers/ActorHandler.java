@@ -45,7 +45,7 @@ public class ActorHandler {
         session.close();
 
 
-        return newActor.getId();
+        return newActor.getActorId();
     }
 
     public int update(Actor updateActor) {
@@ -53,7 +53,7 @@ public class ActorHandler {
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
         session.beginTransaction();
-        Actor actor = session.get(Actor.class, updateActor.getId());
+        Actor actor = session.get(Actor.class, updateActor.getActorId());
         actor.setFirstName(updateActor.getFirstName());
         actor.setLastName(updateActor.getLastName());
         session.update(actor);

@@ -1,7 +1,7 @@
 package se.yalar.grupp5.sakiladata.entities;
 
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import org.hibernate.mapping.Set;
 
 @Entity
@@ -10,7 +10,8 @@ public class Film {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    @Column(name="film_id")
+    private int filmId;
 
     @Column(name = "title")
     private String title;
@@ -53,12 +54,12 @@ public class Film {
     public Film() {
     }
 
-    public int getId() {
-        return id;
+    public int getFilmId() {
+        return filmId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setFilmId(int filmId) {
+        this.filmId = filmId;
     }
 
     public String getTitle() {
@@ -160,7 +161,7 @@ public class Film {
     @Override
     public String toString() {
         return "Film{" +
-                "id=" + id +
+                "filmId=" + filmId +
                 ", title='" + title + '\'' +
                 ", description='" + description + '\'' +
                 ", releaseYear=" + releaseYear +
