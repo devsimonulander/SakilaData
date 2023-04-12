@@ -17,7 +17,7 @@ public class CreateStaff {
         Staff staff = new Staff();
 
         staff.setFirstName(tfFirstName.getText());
-        //staff.setLastName(tfLastName.getText()); <-- Fel datatyp
+        staff.setLastName(tfLastName.getText());
 
         AddressHandler addressHandler = new AddressHandler();
         Address address = addressHandler.getById(Integer.parseInt(tfAddressId.getText()));
